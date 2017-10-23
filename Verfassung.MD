@@ -12,7 +12,7 @@ Alle 6 Beamten der Justiz werden vom Parlament ins Amt gewählt und können vom 
 
 Die Urteilsbegründung muss öffentlich vorliegen.
 
-3. Legislative
+## 3. Legislative
 
 Alle Abgeordneten des Parlaments haben eine Amtsimmunität, welche jedoch jederzeit vom Verfassungsgericht aufgehoben werden kann. 
 Dem Parlament sitzt ein Parlamentspräsident vor, der kein Stimmrecht hat, die Diskussionen leitet und darauf achtet, dass die Geschäftsordnung eingehalten wird. Er wird von dem gesamten Parlament gewählt und ist eine Legislaturperiode im Amt
