@@ -15,14 +15,11 @@ Alle Staatsburger sind wahlberechtigt. Wahlberechtigten wählen Parteien. Die An
 
 Entweder nur eine Wahl, oder Mittwoch morgens die zweite Legislaturperiode, die ab Donnerstag morgen die alte Regierung ablöst (einen Tag Regierungsbildung)
 
-
-SuS wählen Parteien. Die Anzahl der Abgeordneten (31, davon 30 stimmberechtigt und 1 Präsident _siehe 3_) wird nun verhältnismäßig unter den Parteien verteilt, die mindestens 10% der abgegebenen Stimmen erreicht haben. Parteien haben vor der Wahl öffentliche Listen, aus denen sich erschließt, welche Abgeordnete in welcher Reihenfolge in das Parlament einziehen.  Entweder nur eine Wahl, oder Mittwoch morgens die zweite Legislaturperiode, die ab Donnerstag morgen die alte Regierung ablöst (einen Tag Regierungsbildung)
-
 Parteien müssen bis spätestens 1 Woche vor der Wahl mindestens 50 Unterschriften gesammelt haben (_bei 700 Schülern wenn jeder
 nur einmal unterschreibt, max. 14 Parteien_), um zur Wahl zugelassen zu werden.
 (_Begründung: Wahlen müssen vorbereitet werden, Wahlzettel gedruckt etc._)
 
-_Frage: Von wann bis wann geht SaS? Sind 2 Tage pro Parlament sinnvoll? Wahrscheinlich geht der erste Tag nur für 'sich raffen'
+_Frage: Von wann bis wann geht SaS? Sind 2 Tage pro Parlament sinnvoll? Wahrscheinlich geht der erste Tag nur für 'sich raffen' daruf_
 
 ## 4. Judikative
 
