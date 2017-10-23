@@ -12,7 +12,7 @@ Ein (E) hinter einem Artikel zeigt den Ewigkeitsgarantie des Artikels an
 - (1): Jede hat das Recht auf die freie Entfaltung ihrer Persönlichkeit, soweit sie nicht die Rechte anderer verletzt und nicht gegen die verfassungsmäßige Ordnung oder das Sittengesetz verstößt.
 - (2): Jede hat das Recht auf Leben und körperliche Unversehrtheit. Die Freiheit der Person ist unverletzlich. In diese Rechte darf nur auf Grund eines Gesetzes eingegriffen werden.
 
-### Artikel 3
+### Artikel 3 (E)
 - (1): Alle Menschen sind vor dem Gesetz gleich.
 - (2): Frauen und Männer sind gleichberechtigt. Der Staat fördert die tatsächliche Durchsetzung der Gleichberechtigung von Frauen und Männern und wirkt auf die Beseitigung bestehender Nachteile hin.
 - (3): Niemand darf wegen ihres Geschlechtes, ihrer Abstammung, ihrer Rasse, ihrer Sprache, ihrer Heimat und Herkunft, ihres Glaubens, ihrer religiösen oder politischen Anschauungen und ihrer sexuellen Orientierung benachteiligt oder bevorzugt werden. Niemand darf wegen ihrer Behinderung benachteiligt werden.
