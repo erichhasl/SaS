@@ -40,3 +40,10 @@ Die Regierung wird von einer mehrheitsfahigen Koalition aus Parteien gebildet un
 Der Staatsanwalt gehört nicht zur Regierung und wird nicht von den Parteien gestellt, sondern von dem Parlament gewählt. 
 
 Das Parlament bestimmt einen Chef der Polizei. Dieser untersteht nicht dem Innenministerium, sondern ist eine unabhängige Instanz der Exekutive. 
+
+## 7. Änderung der Verfassung
+Verfassungsänderungen müssen von einer 2/3 Mehrheit der wahlberechtigten Bevölkerung bestatigt werden.
+Bei trivialen Verfassungsänderungen kann diese mit einer 3/4 Mehrheit des Parlaments und Zustimmung des Verfassungsgericht geändert werden.
+
+## 8. Entzug des Stimmrechts und Verbot von Parteien / Organisationen
+Ist das Interesse der öffentlichen Sicherheit und offentlichen Ruhe schwerwiegender als das Recht der Meinungsfreiheit des Einzelnen oder liegt eine Gefährdung der öffentlichen Ordnung vor, darf das Verfassungsgericht Parteien oder Organisationen verbieten. Im Extremfall kann dem Einzelnen das Stimmrecht entzogen werden, wenn er nachweislich den Staat als solchen stürzen will.
