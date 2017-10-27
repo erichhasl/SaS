@@ -2,7 +2,7 @@
 Wenn im Folgenden die weibliche Form verwendet wird, so ist  die maennliche Form immer mit eingeschlossen. Die Beschränkung auf ein Geschlecht beruht nur auf besserer Lesbarkeit.
 
 ## I Grundrechte
-Ein (E) hinter einem Artikel zeigt den Ewigkeitsgarantie des Artikels an. Artikel mit Ewigkeitsgarantie dürfen nicht verändert werden.
+Ein (E) hinter einem Artikel zeigt die Ewigkeitsgarantie des Artikels an. Artikel mit Ewigkeitsgarantie dürfen nicht verändert werden.
 
 ### Artikel 1 (E)
 - (1): Die Würde des Menschen ist unantastbar. Sie zu achten und zu schützen ist Verpflichtung aller staatlichen Gewalt.
