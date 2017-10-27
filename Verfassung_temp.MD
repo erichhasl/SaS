@@ -1,8 +1,9 @@
 ## Präambel
-Wenn im Folgenden die weibliche Form verwendet wird, so schliest dass die maennliche Form immer mit ein. Die Beschraenkung auf ein Geschlecht beruht nur auf besserer Lesbarkeit.
+Wenn im Folgenden die weibliche Form verwendet wird, so ist  die maennliche Form immer mit eingeschlossen. Die Beschränkung auf ein Geschlecht beruht nur auf besserer Lesbarkeit.
 
 ## I Grundrechte
-Ein (E) hinter einem Artikel zeigt den Ewigkeitsgarantie des Artikels an
+Ein (E) hinter einem Artikel zeigt den Ewigkeitsgarantie des Artikels an. Artikel mit Ewigkeitsgarantie dürfen nicht verändert werden.
+
 ### Artikel 1 (E)
 - (1): Die Würde des Menschen ist unantastbar. Sie zu achten und zu schützen ist Verpflichtung aller staatlichen Gewalt.
 - (2): Das _Name des Staates Hier_ Volk bekennt sich darum zu unverletzlichen und unveräußerlichen Menschenrechten als Grundlage jeder menschlichen Gemeinschaft, des Friedens und der Gerechtigkeit in der Welt.
