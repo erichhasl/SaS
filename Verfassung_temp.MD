@@ -189,7 +189,7 @@ Wenn im Folgenden die weibliche Form verwendet wird, so ist  die männliche Form
 
 ## Artikel 33 (Ewigkeitsklausel) (E)
 - (1): Ein (E) hinter einem Artikel der Verfassung zeigt die Ewigkeitsgarantie des Artikels an. 
-- (2): Eine Änderung dieser Verfassung, durch welche die Gliederung des Staates, die grundsätzliche Mitwirkung des Volkes bei der Gesetzgebung oder die in den Artikeln 1, 2,3, 16 und 33 niedergelegten Grundsätze berührt werden, ist unzulässig.
+- (2): Eine Änderung dieser Verfassung, durch welche die Gliederung des Staates oder die in den Artikeln 1, 2,3, 16 und 33 niedergelegten Grundsätze berührt werden, ist unzulässig.
 
 ## Artikel 34 (Verfassungsänderung und -einhaltung)
 - (1): Die gesamten Handlungen von Einzelpersonen und Personenverbänden müssen zu jedem Zeitpunkt verfassungskonform sein. Für die Einhaltung der Verfassung ist auf exekutiver Seite die Staatsanwaltschaft und die Polizei zuständig, auf judikativer Seite das Verfassungsgericht.
