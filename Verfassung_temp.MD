@@ -107,46 +107,55 @@ Ein (E) hinter einem Artikel zeigt die Ewigkeitsgarantie des Artikels an. Artike
 - (2): Die Präsidentin übernimmt keine Verantwortung für das Handeln der Regierung.
 - (3): Per Mehrheitswahl wird sie direkt von allen wahlberechtigten Bürgerinnen gewahlt.
 - (4): Jede Staatsbürgerin über 12 Jahren kann sich zur Präsidentin aufstellen lassen, sofern sie die nötige Unterstützung von mindestens 10 weiteren Staatsbürgerinnen vorweisen kann.
-- (5): Alle vom Parlament beschlossenen Gesetze müssen innerhalb des darauffolgenden Tages unterzeichnet und damit ratifiziert werden, damit diese gültig werden. Falls sie an der Rechtmaßigkeit der Gesetze zweifelt, besteht die Moglichkeit, das Verfassungsgericht zu informieren.
+- (5): Alle vom Parlament beschlossenen Gesetze müssen innerhalb des darauffolgenden Tages unterzeichnet und damit ratifiziert werden, damit diese Gültigkeit erlangen. Falls sie die Rechtmaßigkeit der Gesetze bezweifelt, besteht die Moglichkeit, das Verfassungsgericht zu informieren.
 
 ## III Die Legislative
 
 ### Artikel 21 (Parlamentsgrundsätze)
 - (1): Die Abgeordnete des Parlaments werden in allgemeiner, unmittelbarer, freier, gleicher und geheimer Wahl gewählt. 
 - (2): Das Parlament verhandelt öffentlich. Auf Antrag eines Zehntels seiner Mitgliederinnen oder auf Antrag der Regierung kann mit Zweidrittelmehrheit die Öffentlichkeit ausgeschlossen werden. Über den Antrag wird in nichtöffentlicher Sitzung entschieden.
-- (3): Zu einem Beschlusse des Bundestages ist die Mehrheit der abgegebenen Stimmen erforderlich, soweit dieses Grundgesetz nichts anderes bestimmt. Für die vom Bundestage vorzunehmenden Wahlen kann die Geschäftsordnung Ausnahmen zulassen.
+- (3): Zu einem Beschlusse des Parlament ist die Mehrheit der abgegebenen Stimmen erforderlich, soweit dieses Grundgesetz nichts anderes bestimmt.
 - (4): Wahrheitsgetreue Berichte über die öffentlichen Sitzungen des Bundestages und seiner Ausschüsse bleiben von jeder Verantwortlichkeit frei.
 - (5): Dem Parlament sitzt eine Parlamentspräsidentin vor, die aus dem Kreis der Abgeordneten benannt wird, die Diskussionen leitet und darauf achtet, dass die Geschäftsordnung eingehalten wird. Sie wird von dem gesamten Parlament gewählt und ist eine Legislaturperiode im Amt.
 
-### Artikel 22 (Abgeordnete)
+### Artikel 22 (Aufgaben des Parlaments)
+- (1): Das Parlament erlässt allgemein gültige Gesetze.
+- (2): Die Regierung wird vom Parlament kontrolliert.
+- (3): Das Parlament bildet Ausschüsse zur Untersuchung von Sachthemen. Näheres regelt die Geschaftsordnung.
+- (4): Der Staatshaushalt wird vom Parlament beschlossen.
+- (5): Die Kanzlerin wird durch das Parlament gewählt.
+
+### Artikel 23 (Abgeordnete)
 - (1): Abgeordnete sind nicht an Aufträge oder Weisungen gebunden und lediglich ihrem Gewissen unterworfen.
 - (2): Alle Abgeordneten des Parlaments haben eine Amtsimmunität, dies gilt nicht für verleumderische Beleidigungen. Die Immunität kann jedoch jederzeit vom Verfassungsgericht aufgehoben werden.
 
-### Artikel 23 (Beziehung zwischen Regierund und Parlament 
+### Artikel 24 (Beziehung zwischen Regierung und Parlament)
 - (1): Das Parlament und seine Ausschüsse können die Anwesenheit jedes Mitgliedes der Regierung verlangen.
-(2) Die Mitglieder der Regierung sowie ihre Beauftragten haben zu allen Sitzungen des Parlaments und seiner Ausschüsse Zutritt. Sie müssen jederzeit gehört werden.
+- (2): Die Mitglieder der Regierung sowie ihre Beauftragten haben zu allen Sitzungen des Parlaments und seiner Ausschüsse Zutritt. Sie müssen jederzeit gehört werden.
 
-### Artikel 24 (Geschäftsordnung des Parlaments)
+### Artikel 25 (Geschäftsordnung des Parlaments)
 - (1): Zu Beginn der Legislaturperiode wird vom Parlament eine Geschäftsordnung festgelegt, die die ganze Legislaturperiode über Gültigkeit hat.
 - (2): Die Parlamentspräsidentin achtet auf Einhaltung dieser Geschäftsordnung.
 - (3): Ein Gesetzesvorschlag, den 5 Abgeordnete gemeinsam einbringen, muss im Plenum diskutiert und am Ende darüber abgestimmt werden. 
 - (4): Die Parlamentspräsidentin legt die Tagesordnung und die Reihenfolge, in der ausstehende Gesetzesvorschläge bearbeitet werden mussen, fest. 3 Abgeordnete können gemeinsam eine Änderungen der Tagesordnung beantragen, über die das Plenum per Handzeichen mit einfachem Mehrheitsbeschluss abzustimmen hat.
 
+
+
 ## IV: Exekutive
 
-### Artikel 25 (Kanzlerin)
+### Artikel 26 (Kanzlerin)
 - (1): Die Kanzlerin wird durch das Parlament gewählt.
 - (2): Sie leitet das Kabinett und sitzt diesem vor. Ihr obliegt die Richtlinenkompetenz und sie trägt die Regierungsverantwortung gegenüber dem Parlament.
 - (3): Die Kanzlerin ernennt eine Stellvertreterin.
 
-### Artikel 26 (Kabinett)
+### Artikel 27 (Kabinett)
 - (1): Das Kabinett besteht aus den Ministern (Innenminister, Außenminister, Wirtschatfsminister, Arbeitsminister und Kultusminister). Diese werden vom Kanzler vorgeschlagen und durch den Präsidenten ernannt. Sie müssen
 nicht Teil des gewählten Parlaments sein.
 - (2): Innerhalb der vom Bundeskanzler bestimmten Richtlinien leitet jeder Minister seinen Geschäftsbereich selbstständig und
 unter eigener Verantwortung.
 - (3): Die Maximalgröße pro Ministerium beträgt 6 Mitarbeiter (5 Beamte, 1 Minister).
 
-### Artikel 27 (Staatsanwaltschaft)
+### Artikel 28 (Staatsanwaltschaft)
 - (1): Die Staatsanwaltschaft untersteht nicht der Regierung und wird nicht von den Parteien gestellt, sondern von dem Parlament per Mehrheitsbeschluss gewählt. 
 - (2): Die Saatsanwaltschaft ist der Dreh- und Angelpunkt des Strafverfahrens. Sie hat beim Verdacht von Straftaten i. d. R. von Amts wegen nach dem Legalitätsprinzip einzuschreiten; sie hat Anzeigen von Straftaten entgegenzunehmen und mit der Polizei, die Hilfsorgan der Staatsanwaltschaft ist, oder den Gerichten  den Sachverhalt zu untersuchen. 
 - (3): Die Staatsanwaltschaft hat nicht nur die belastenden, sondern auch die entlastenden Umstände zu ermitteln und hervorzuheben. 
@@ -154,7 +163,7 @@ unter eigener Verantwortung.
 - (5): Der Staatsanwaltschaft obliegt die Entscheidung darüber, ob das Verfahren einzustellen oder bei hinreichendem Tatverdacht Anklage zu erheben ist (Opportunitätsprinzip). In der Hauptverhandlung vertritt sie die Anklage; sie kann – auch zugunsten des Angeklagten – Rechtsmittel einlegen. D
 - (6): Die Staatsanwaltschaft ist außerdem Vollstreckungsbehörde (Strafvollstreckung). 
 
-### Artikel 28 (Polizei und Gewaltenmonopol)
+### Artikel 29 (Polizei und Gewaltenmonopol)
 - (1): Das Parlament bestimmt eine Polizeivorsteherin. Diese untersteht nicht dem Innenministerium, sondern ist eine unabhängige Instanz der Exekutive. 
 - (2): Die Polizei hat repräsentativ die vom modernen Staat wahrgenommene ausschließliche Befugnis, auf seinem Staatsgebiet physische Gewalt (körperliche Zwangsgewalt) einzusetzen oder ihren Einsatz zuzulassen. Das Gewaltenmonopol ist ein wesentlicher Teil der inneren Souveränität eines Staates. 
 - (3): Privatpersonen dürfen physische Gewalt nur aufgrund staatlicher Ermächtigung oder Delegation ausüben, wenn staatliche Gewalt ihre Schutzaufgabe nicht (rechtzeitig) wahrnehmen kann. Beispiele sind das Notwehrrecht und das Selbsthilferecht.
@@ -162,31 +171,31 @@ unter eigener Verantwortung.
 
 ## V: Judikative
 
-### Artikel 28 (Verfassungsgericht)
+### Artikel 30 (Verfassungsgericht)
 - (1): Das Verfassungsgericht besteht aus 3 hauptberuflichen Richterinnen. 
 - (2): Eskann auch ohne Klage vom Parlament verabschiedete Gesetze jederzeit einstimmig als verfassungswidrig zurückweisen oder im Eilverfahren stoppen. 
 - (3): Gleichzeitig hat das Verfassungsgericht über nicht in der Verfassung oder im Strafgesetzbuch enthaltene Klagen und Vorfälle zu entscheiden und muss über Revisionen des Zivil- und Strafgerichts entscheiden. 
 - (4): Einstimmig kann das Verfassungsgericht Klagen abweisen und Urteile fällen.
 - (5): Das Verfassungsgericht kann einstimmig die Immunität eines Abgeordneten aufheben.
 
-### Artikel 29 (Zivil- und Strafgericht)
+### Artikel 31 (Zivil- und Strafgericht)
 - (1): Das Zivil- und Strafgericht besteht aus 5 Richtern, davon 3 fest und 2 täglich zufällig aus Schöffenbewerbungen ausgewählt. 
 - (2): Es ist zuständig für alle Klagen von Privatpersonen gegen andere Privatpersonen oder öffentliche Instanzen. 
 - (3): Es kann Urteile mit einer einfachen Mehrheit beschließen und Klagen mit 4 von 5 Stimmen abweisen. 
 - (4): Das Gericht kann nicht ohne Klage aktiv werden.
 
-### Artikel 30 (Öffentlichkeit und Unabhangigkeit der Justiz)
+### Artikel 32 (Öffentlichkeit und Unabhangigkeit der Justiz)
 - (1): Alle 6 Beamtinnen der Justiz werden vom Parlament ins Amt gewählt und können vom Parlament mit einer 2/3 Mehrheit entmachtet werden. 
 - (2): Die Urteilsbegründung muss öffentlich vorliegen.
 
 ## VI: Die Verfassung
 
-## Artikel 31 (Verfassungsänderung und -einhaltung)
+## Artikel 33 (Verfassungsänderung und -einhaltung)
 - (1): Die gesamten Handlungen von Einzelpersonen und Personenverbänden müssen zu jedem Zeitpunkt verfassungskonform sein. Für die Einhaltung der Verfassung ist auf exekutiver Seite die Staatsanwaltschaft und die Polizei zuständig, auf judikativer Seite das Verfassungsgericht.
 - (2): Verfassungsänderungen müssen von einer 2/3 Mehrheit der wahlberechtigten Bevölkerung bestätigt werden.
 - (3): Bei trivialen Verfassungsänderungen kann diese mit einer 3/4 Mehrheit des Parlaments und Zustimmung des Verfassungsgericht geändert werden.
 
-## Artikel 32 (Einschränkung der Verfassung)
+## Artikel 34 (Einschränkung der Verfassung)
 - (1): Ist das Interesse der öffentlichen Sicherheit und offentlichen Ruhe schwerwiegender als das Recht der Meinungsfreiheit des Einzelnen oder liegt eine Gefährdung der öffentlichen Ordnung vor, darf das Verfassungsgericht Parteien oder Organisationen verbieten. 
 - (2): Im Extremfall kann dem Einzelnen das Stimmrecht entzogen werden, wenn er nachweislich den Staat als solchen stürzen will.
 - (3): Wer die Freiheit der Meinungsäußerung, insbesondere die Pressefreiheit, die Versammlungsfreiheit, die Vereinigungsfreiheit , das Brief-, Post- und Fernmeldegeheimnis, das Eigentum oder das Asylrecht zum Kampfe gegen die freiheitliche demokratische Grundordnung mißbraucht, verwirkt diese Grundrechte. Die Verwirkung und ihr Ausmaß werden durch das Bundesverfassungsgericht ausgesprochen. (-> Artikel 15.1)
