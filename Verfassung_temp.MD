@@ -1,8 +1,8 @@
 ## Präambel
-Wenn im Folgenden die weibliche Form verwendet wird, so ist  die maennliche Form immer mit eingeschlossen. Die Beschränkung auf ein Geschlecht beruht nur auf besserer Lesbarkeit.
+Wenn im Folgenden die weibliche Form verwendet wird, so ist  die männliche Form immer mit eingeschlossen. Die Beschränkung auf ein Geschlecht beruht nur auf besserer Lesbarkeit.
 
 ## I Grundrechte
-Ein (E) hinter einem Artikel zeigt die Ewigkeitsgarantie des Artikels an. Artikel mit Ewigkeitsgarantie dürfen nicht verändert werden.
+
 
 ### Artikel 1 (E)
 - (1): Die Würde des Menschen ist unantastbar. Sie zu achten und zu schützen ist Verpflichtung aller staatlichen Gewalt.
@@ -76,7 +76,7 @@ Ein (E) hinter einem Artikel zeigt die Ewigkeitsgarantie des Artikels an. Artike
 ### Artikel 15 (Einschränkung der Grundrechte)
 - (1): Wer die Freiheit der Meinungsäußerung, insbesondere die Pressefreiheit, die Versammlungsfreiheit, die Vereinigungsfreiheit , das Brief-, Post- und Fernmeldegeheimnis, das Eigentum oder das Asylrecht zum Kampfe gegen die freiheitliche demokratische Grundordnung mißbraucht, verwirkt diese Grundrechte. Die Verwirkung und ihr Ausmaß werden durch das Bundesverfassungsgericht ausgesprochen.
 
-### Artikel 16 (Demokratie)
+### Artikel 16 (Demokratie) (E)
 - (1): _Name des Staates_ ist ein demokratischer und sozialer Staat.
 - (2): Alle Staatsgewalt geht vom Volke aus. Sie wird vom Volke in Wahlen und Abstimmungen und durch besondere Organe der Gesetzgebung, der vollziehenden Gewalt und der Rechtsprechung ausgeübt.
 - (3): Die Gesetzgebung ist an die verfassungsmäßige Ordnung, die vollziehende Gewalt und die Rechtsprechung sind an Gesetz und Recht gebunden.
@@ -136,50 +136,47 @@ Ein (E) hinter einem Artikel zeigt die Ewigkeitsgarantie des Artikels an. Artike
 ### Artikel 25 (Geschäftsordnung des Parlaments)
 - (1): Zu Beginn der Legislaturperiode wird vom Parlament eine Geschäftsordnung festgelegt, die die ganze Legislaturperiode über Gültigkeit hat.
 - (2): Die Parlamentspräsidentin achtet auf Einhaltung dieser Geschäftsordnung.
-- (3): Ein Gesetzesvorschlag, den 5 Abgeordnete gemeinsam einbringen, muss im Plenum diskutiert und am Ende darüber abgestimmt werden. 
-- (4): Die Parlamentspräsidentin legt die Tagesordnung und die Reihenfolge, in der ausstehende Gesetzesvorschläge bearbeitet werden mussen, fest. 3 Abgeordnete können gemeinsam eine Änderungen der Tagesordnung beantragen, über die das Plenum per Handzeichen mit einfachem Mehrheitsbeschluss abzustimmen hat.
-
+- (3): Gesetzesvorlagen werden beim Parlament durch die Regierung oder aus der Mitte des Parlaments, unterstützt von mindestens 5 Abgeordneten, eingebracht. Eingebrachte Vorlagen müssen im Plenum diskutiert und als Gesetze erlassen oder zurückgewiesen werden. 
+- (4): Die Parlamentspräsidentin legt die Tagesordnung und die Reihenfolge, in der ausstehende Gesetzesvorlagen bearbeitet werden müssen, fest. 3 Abgeordnete können gemeinsam eine Änderungen der Tagesordnung beantragen, über die das Plenum mit einfachem Mehrheitsbeschluss abzustimmen hat.
 
 
 ## IV: Exekutive
 
 ### Artikel 26 (Kanzlerin)
 - (1): Die Kanzlerin wird durch das Parlament gewählt.
-- (2): Sie leitet das Kabinett und sitzt diesem vor. Ihr obliegt die Richtlinenkompetenz und sie trägt die Regierungsverantwortung gegenüber dem Parlament.
+- (2): Sie leitet die Regierung und sitzt diesem vor. Ihr obliegt die Richtlinenkompetenz und sie trägt die Regierungsverantwortung gegenüber dem Parlament.
 - (3): Die Kanzlerin ernennt eine Stellvertreterin.
 
-### Artikel 27 (Kabinett)
-- (1): Das Kabinett besteht aus den Ministern (Innenminister, Außenminister, Wirtschatfsminister, Arbeitsminister und Kultusminister). Diese werden vom Kanzler vorgeschlagen und durch den Präsidenten ernannt. Sie müssen
-nicht Teil des gewählten Parlaments sein.
-- (2): Innerhalb der vom Bundeskanzler bestimmten Richtlinien leitet jeder Minister seinen Geschäftsbereich selbstständig und
-unter eigener Verantwortung.
-- (3): Die Maximalgröße pro Ministerium beträgt 6 Mitarbeiter (5 Beamte, 1 Minister).
+### Artikel 27 (Regierung)
+- (1): Die Regierung besteht aus den Ministerinnen (Innenministerin, Außenministerin, Wirtschaftsministerin, Arbeitsministerin und Kultusministerin) und der Kanzlerin. Die Ministerinnen werden von der Kanzlerin vorgeschlagen und durch die Präsidentin ernannt. Sie müssen nicht Teil des gewählten Parlaments sein.
+- (2): Innerhalb der von der Bundeskanzlerin bestimmten Richtlinien leitet jede Ministerin seinen Geschäftsbereich selbstständig und unter eigener Verantwortung.
+- (3): Die Maximalgröße pro Ministerium beträgt 6 Mitarbeiterinnen (5 Beamtinnen, 1 Ministerin).
 
 ### Artikel 28 (Staatsanwaltschaft)
 - (1): Die Staatsanwaltschaft untersteht nicht der Regierung und wird nicht von den Parteien gestellt, sondern von dem Parlament per Mehrheitsbeschluss gewählt. 
 - (2): Die Saatsanwaltschaft ist der Dreh- und Angelpunkt des Strafverfahrens. Sie hat beim Verdacht von Straftaten i. d. R. von Amts wegen nach dem Legalitätsprinzip einzuschreiten; sie hat Anzeigen von Straftaten entgegenzunehmen und mit der Polizei, die Hilfsorgan der Staatsanwaltschaft ist, oder den Gerichten  den Sachverhalt zu untersuchen. 
 - (3): Die Staatsanwaltschaft hat nicht nur die belastenden, sondern auch die entlastenden Umstände zu ermitteln und hervorzuheben. 
 - (4): Der Staatsanwaltschaft steht das Recht zu, bestimmte Zwangsmaßnahmen (z. B. vorläufige Festnahme, Beschlagnahme, Durchsuchung, Untersuchungshaft) entweder (bei Gefahr im Verzug) selbst anzuordnen oder sie beim zuständigen Richter zu beantragen. 
-- (5): Der Staatsanwaltschaft obliegt die Entscheidung darüber, ob das Verfahren einzustellen oder bei hinreichendem Tatverdacht Anklage zu erheben ist (Opportunitätsprinzip). In der Hauptverhandlung vertritt sie die Anklage; sie kann – auch zugunsten des Angeklagten – Rechtsmittel einlegen. D
+- (5): Der Staatsanwaltschaft obliegt die Entscheidung darüber, ob das Verfahren einzustellen oder bei hinreichendem Tatverdacht Anklage zu erheben ist (Opportunitätsprinzip). In der Hauptverhandlung vertritt sie die Anklage; sie kann – auch zugunsten des Angeklagten – Rechtsmittel einlegen. 
 - (6): Die Staatsanwaltschaft ist außerdem Vollstreckungsbehörde (Strafvollstreckung). 
 
 ### Artikel 29 (Polizei und Gewaltenmonopol)
-- (1): Das Parlament bestimmt eine Polizeivorsteherin. Diese untersteht nicht dem Innenministerium, sondern ist eine unabhängige Instanz der Exekutive. 
-- (2): Die Polizei hat repräsentativ die vom modernen Staat wahrgenommene ausschließliche Befugnis, auf seinem Staatsgebiet physische Gewalt (körperliche Zwangsgewalt) einzusetzen oder ihren Einsatz zuzulassen. Das Gewaltenmonopol ist ein wesentlicher Teil der inneren Souveränität eines Staates. 
-- (3): Privatpersonen dürfen physische Gewalt nur aufgrund staatlicher Ermächtigung oder Delegation ausüben, wenn staatliche Gewalt ihre Schutzaufgabe nicht (rechtzeitig) wahrnehmen kann. Beispiele sind das Notwehrrecht und das Selbsthilferecht.
+- (1): Das Parlament bestimmt eine Polizeivorsteherin. Die Polizei untersteht nicht dem Innenministerium, sondern ist eine unabhängige Instanz der Exekutive. 
+- (2): Die Polizei hat repräsentativ die vom Staat wahrgenommene ausschließliche Befugnis, auf seinem Staatsgebiet physische Gewalt einzusetzen oder ihren Einsatz zuzulassen. 
+- (3): Privatpersonen dürfen physische Gewalt nur aufgrund staatlicher Ermächtigung oder Delegation ausüben, wenn staatliche Gewalt ihre Schutzaufgabe nicht rechtzeitig wahrnehmen kann.
 - (4): Das Gewaltenmonopol soll für den Bürger im Verhältnis zu den Mitbürgern freiheitssichernd wirken. 
 
 ## V: Judikative
 
 ### Artikel 30 (Verfassungsgericht)
 - (1): Das Verfassungsgericht besteht aus 3 hauptberuflichen Richterinnen. 
-- (2): Eskann auch ohne Klage vom Parlament verabschiedete Gesetze jederzeit einstimmig als verfassungswidrig zurückweisen oder im Eilverfahren stoppen. 
-- (3): Gleichzeitig hat das Verfassungsgericht über nicht in der Verfassung oder im Strafgesetzbuch enthaltene Klagen und Vorfälle zu entscheiden und muss über Revisionen des Zivil- und Strafgerichts entscheiden. 
+- (2): Es kann auch ohne Klage vom Parlament verabschiedete Gesetze jederzeit einstimmig als verfassungswidrig zurückweisen oder im Eilverfahren stoppen.
+- (3): Gleichzeitig hat das Verfassungsgericht über nicht in der Verfassung oder im Strafgesetzbuch enthaltene Klagen und Vorfälle zu entscheiden und muss über Revisionen des Zivil- und Strafgerichts entscheiden.
 - (4): Einstimmig kann das Verfassungsgericht Klagen abweisen und Urteile fällen.
 - (5): Das Verfassungsgericht kann einstimmig die Immunität eines Abgeordneten aufheben.
 
 ### Artikel 31 (Zivil- und Strafgericht)
-- (1): Das Zivil- und Strafgericht besteht aus 5 Richtern, davon 3 fest und 2 täglich zufällig aus Schöffenbewerbungen ausgewählt. 
+- (1): Das Zivil- und Strafgericht besteht aus 5 Richterinnenn, davon sind 3 hauptberuflich und 2 täglich zufällig aus Schöffenbewerbungen ausgewählt. 
 - (2): Es ist zuständig für alle Klagen von Privatpersonen gegen andere Privatpersonen oder öffentliche Instanzen. 
 - (3): Es kann Urteile mit einer einfachen Mehrheit beschließen und Klagen mit 4 von 5 Stimmen abweisen. 
 - (4): Das Gericht kann nicht ohne Klage aktiv werden.
@@ -190,15 +187,21 @@ unter eigener Verantwortung.
 
 ## VI: Die Verfassung
 
-## Artikel 33 (Verfassungsänderung und -einhaltung)
-- (1): Die gesamten Handlungen von Einzelpersonen und Personenverbänden müssen zu jedem Zeitpunkt verfassungskonform sein. Für die Einhaltung der Verfassung ist auf exekutiver Seite die Staatsanwaltschaft und die Polizei zuständig, auf judikativer Seite das Verfassungsgericht.
-- (2): Verfassungsänderungen müssen von einer 2/3 Mehrheit der wahlberechtigten Bevölkerung bestätigt werden.
-- (3): Bei trivialen Verfassungsänderungen kann diese mit einer 3/4 Mehrheit des Parlaments und Zustimmung des Verfassungsgericht geändert werden.
+## Artikel 33 (Ewigkeitsklausel) (E)
+- (1): Ein (E) hinter einem Artikel der Verfassung zeigt die Ewigkeitsgarantie des Artikels an. 
+- (2): Eine Änderung dieser Verfassung, durch welche die Gliederung des Staates, die grundsätzliche Mitwirkung des Volkes bei der Gesetzgebung oder die in den Artikeln 1, 2,3, 16 und 33 niedergelegten Grundsätze berührt werden, ist unzulässig.
 
-## Artikel 34 (Einschränkung der Verfassung)
+## Artikel 34 (Verfassungsänderung und -einhaltung)
+- (1): Die gesamten Handlungen von Einzelpersonen und Personenverbänden müssen zu jedem Zeitpunkt verfassungskonform sein. Für die Einhaltung der Verfassung ist auf exekutiver Seite die Staatsanwaltschaft und die Polizei zuständig, auf judikativer Seite das Verfassungsgericht.
+- (2): Verfassungsänderungen müssen von einer einfachen Mehrheit der wahlberechtigten Bevölkerung bestätigt werden.
+- (3): Bei Verfassungsänderungen, die das Wesen dieser nicht verändern, kann diese mit einer 3/4 Mehrheit des Parlaments und Zustimmung des Verfassungsgericht geändert werden. Das Verfassungsgericht entscheidet im Zweifelsfall, ob das Wesen verändert werden würde.
+
+## Artikel 35 (Einschränkung der Verfassung)
 - (1): Ist das Interesse der öffentlichen Sicherheit und offentlichen Ruhe schwerwiegender als das Recht der Meinungsfreiheit des Einzelnen oder liegt eine Gefährdung der öffentlichen Ordnung vor, darf das Verfassungsgericht Parteien oder Organisationen verbieten. 
 - (2): Im Extremfall kann dem Einzelnen das Stimmrecht entzogen werden, wenn er nachweislich den Staat als solchen stürzen will.
 - (3): Wer die Freiheit der Meinungsäußerung, insbesondere die Pressefreiheit, die Versammlungsfreiheit, die Vereinigungsfreiheit , das Brief-, Post- und Fernmeldegeheimnis, das Eigentum oder das Asylrecht zum Kampfe gegen die freiheitliche demokratische Grundordnung mißbraucht, verwirkt diese Grundrechte. Die Verwirkung und ihr Ausmaß werden durch das Bundesverfassungsgericht ausgesprochen. (-> Artikel 15.1)
+
+## Artikel 
 
 -----
 
