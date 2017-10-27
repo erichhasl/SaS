@@ -77,38 +77,37 @@ Ein (E) hinter einem Artikel zeigt die Ewigkeitsgarantie des Artikels an. Artike
 - (1): Wer die Freiheit der Meinungsäußerung, insbesondere die Pressefreiheit, die Versammlungsfreiheit, die Vereinigungsfreiheit , das Brief-, Post- und Fernmeldegeheimnis, das Eigentum oder das Asylrecht zum Kampfe gegen die freiheitliche demokratische Grundordnung mißbraucht, verwirkt diese Grundrechte. Die Verwirkung und ihr Ausmaß werden durch das Bundesverfassungsgericht ausgesprochen.
 
 ### Artikel 16 (Demokratie)
-- (1): Die Bundesrepublik Deutschland ist ein demokratischer und sozialer Bundesstaat.
+- (1): _Name des Staates_ ist ein demokratischer und sozialer Staat.
 - (2): Alle Staatsgewalt geht vom Volke aus. Sie wird vom Volke in Wahlen und Abstimmungen und durch besondere Organe der Gesetzgebung, der vollziehenden Gewalt und der Rechtsprechung ausgeübt.
 - (3): Die Gesetzgebung ist an die verfassungsmäßige Ordnung, die vollziehende Gewalt und die Rechtsprechung sind an Gesetz und Recht gebunden.
 - (4): Gegen jede, die es unternimmt, diese Ordnung zu beseitigen, haben alle _Buergerinnen_ das Recht zum Widerstand, wenn andere Abhilfe nicht möglich ist.
 
 ## II Der Staat
 
-### Artikel 17 (Staatsangehorigkeit)
-- (1): Staatsangehöriger ist, wer Schülerin, Lehrerin oder andersweitig Angestelltin des Goethe-Gymnasium Ludwigsburg ist.
-- (2): Die Staatsangehörigkeit kann von Nicht-Staatsburgern nur erlangt werden, wenn dafur ein besonderer Grund besteht.
+### Artikel 17 (Staatsangehörigkeit)
+- (1): Staatsangehörige ist, wer Schülerin, Lehrerin oder andersweitig Angestellte des Goethe-Gymnasium Ludwigsburg ist.
+- (2): Die Staatsangehörigkeit kann von Nicht-Staatsbürgerinnen nur erlangt werden, wenn dafür ein besonderer Grund besteht.
 - (3): Alle Staantsangehörigen unterliegen einzig und allein der Gesetzbarkeit des Staates _Name hier_, solange sie sich auf _Name hier_ Staatsgebiet befinden. 
-- (4): § 3 gilt nicht, wenn gleichzeitig Gesetze des deutschen Staates verletzt werden. 
+- (4): Absatz 3 gilt nicht, wenn gleichzeitig Gesetze des deutschen Staates verletzt werden. 
 
 ### Artikel 18 (Staatsgebiet)
-- (1): _Name des Staates_ Gebiet ist, was zu dem Gebäudekomplex des Goethe-Gymnasiums Ludwigsburg gehört
-- (2): Durch den Verkauf von staatlichem Gebiet unterliegt es immer noch dem Staat, allein Besitz- und Baurechte gehen auf den Kaufer uber.  
+- (1): _Name des Staates_ Gebiet ist dem Gebäudekomplex des Goethe-Gymnasiums Ludwigsburg Zugehöriges.
+- (2): Durch den Verkauf von staatlichem Gebiet unterliegt dieses immer noch dem Staat, allein Besitz- und Baurechte gehen auf den Käufer über.  
 
 ### Artikel 19 (Wahlrecht)
-- (1): Alle Staatsbürgerinnen ohne Ausnahme sind wahlberechtigt.
-- (2): § 1 kann durch Artikel _XX_ der Verfassung fur Einzelfälle ausser Kraft gesetzt werden.
+- (1): Alle Staatsbürgerinnen sind wahlberechtigt.
+- (2): Absatz 1 kann durch Artikel 32 der Verfassung für Einzelfälle außer Kraft gesetzt werden.
 - (3): Wahlberechtigte wählen Parteien, keine Einzelpersonen.
 - (4): Eine Partei muss mindestens die Unterstützung von 10 Bürgerinnen vorweisen können, um zur Wahl anzutreten.
-- (5): Die Anzahl der Abgeordneten (31, davon 1 Präsident) wird nun verhältnismäßig unter den Parteien verteilt, die mindestens 5% der abgegebenen Stimmen erreicht haben. 
-- (6): Parteien haben vor der Wahl öffentliche Listen, aus denen sich erschließt, welche Abgeordnete in welcher Reihenfolge in das Parlament einziehen.
+- (5): Die Anzahl der Abgeordneten (31, davon 1 Parlamentspräsidentin) wird nun verhältnismäßig unter den gewählten Parteien verteilt, die mindestens 5% der abgegebenen Stimmen erreicht haben. 
+- (6): Parteien haben vor der Wahl Listen offenzulegen, aus denen sich erschließt, welche Abgeordnete in welcher Reihenfolge in das Parlament einziehen.
 
 ### Artikel 20 (Präsidentin)
-- (1): Repräsentativ für den _Name des Staates_ ist die Präsidentin.
+- (1): Das repräsentative Staatsoberhaupt des _Name des Staates_ ist die Präsidentin.
 - (2): Die Präsidentin übernimmt keine Verantwortung für das Handeln der Regierung.
-- (3): Per Mehrheitswahl wird sie direkt von allen wahlberechtigten Bürgern gewahlt.
+- (3): Per Mehrheitswahl wird sie direkt von allen wahlberechtigten Bürgerinnen gewahlt.
 - (4): Jede Staatsbürgerin über 12 Jahren kann sich zur Präsidentin aufstellen lassen, sofern sie die nötige Unterstützung von mindestens 10 weiteren Staatsbürgerinnen vorweisen kann.
-- (5): Die Präsidentin hat keinerlei exekutive Macht, kann aber auf Bitten der Kanzlerin hin das Parlament auflösen.
-- (6): Alle vom Parlament beschlossenen Gesetze müssen innerhalb des darauffolgenden Tages unterzeichnet werden, damit diese gültig werden. Falls sie an der Rechtmaßigkeit der Gesetze zweifelt, besteht die Moglichkeit, das Verfassungsgericht zu informieren.
+- (5): Alle vom Parlament beschlossenen Gesetze müssen innerhalb des darauffolgenden Tages unterzeichnet und damit ratifiziert werden, damit diese gültig werden. Falls sie an der Rechtmaßigkeit der Gesetze zweifelt, besteht die Moglichkeit, das Verfassungsgericht zu informieren.
 
 ## III Die Legislative
 
