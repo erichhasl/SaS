@@ -74,7 +74,7 @@ Wenn im Folgenden die weibliche Form verwendet wird, so ist  die männliche Form
 - (1): Jede hat das Recht, sich einzeln oder in Gemeinschaft mit anderen schriftlich mit Bitten oder Beschwerden an die zuständigen Stellen und an die Volksvertretung zu wenden.
 
 ### Artikel 15 (Einschränkung der Grundrechte)
-- (1): Wer die Freiheit der Meinungsäußerung, insbesondere die Pressefreiheit, die Versammlungsfreiheit, die Vereinigungsfreiheit , das Brief-, Post- und Fernmeldegeheimnis, das Eigentum oder das Asylrecht zum Kampfe gegen die freiheitliche demokratische Grundordnung mißbraucht, verwirkt diese Grundrechte. Die Verwirkung und ihr Ausmaß werden durch das Bundesverfassungsgericht ausgesprochen.
+- (1): Wer die Freiheit der Meinungsäußerung, insbesondere die Pressefreiheit, die Versammlungsfreiheit, die Vereinigungsfreiheit , das Brief-, Post- und Fernmeldegeheimnis, das Eigentum oder das Asylrecht zum Kampfe gegen die freiheitliche demokratische Grundordnung mißbraucht, verwirkt diese Grundrechte. Die Verwirkung und ihr Ausmaß werden durch das Verfassungsgericht ausgesprochen.
 
 ### Artikel 16 (Demokratie) (E)
 - (1): _Name des Staates_ ist ein demokratischer und sozialer Staat.
@@ -199,4 +199,4 @@ Wenn im Folgenden die weibliche Form verwendet wird, so ist  die männliche Form
 ## Artikel 35 (Einschränkung der Verfassung)
 - (1): Ist das Interesse der öffentlichen Sicherheit und offentlichen Ruhe schwerwiegender als das Recht der Meinungsfreiheit des Einzelnen oder liegt eine Gefährdung der öffentlichen Ordnung vor, darf das Verfassungsgericht Parteien oder Organisationen verbieten. 
 - (2): Im Extremfall kann dem Einzelnen das Stimmrecht entzogen werden, wenn er nachweislich den Staat als solchen stürzen will.
-- (3): Wer die Freiheit der Meinungsäußerung, insbesondere die Pressefreiheit, die Versammlungsfreiheit, die Vereinigungsfreiheit , das Brief-, Post- und Fernmeldegeheimnis, das Eigentum oder das Asylrecht zum Kampfe gegen die freiheitliche demokratische Grundordnung mißbraucht, verwirkt diese Grundrechte. Die Verwirkung und ihr Ausmaß werden durch das Bundesverfassungsgericht ausgesprochen. (-> Artikel 15.1)
+- (3): Wer die Freiheit der Meinungsäußerung, insbesondere die Pressefreiheit, die Versammlungsfreiheit, die Vereinigungsfreiheit , das Brief-, Post- und Fernmeldegeheimnis, das Eigentum oder das Asylrecht zum Kampfe gegen die freiheitliche demokratische Grundordnung mißbraucht, verwirkt diese Grundrechte. Die Verwirkung und ihr Ausmaß werden durch das Verfassungsgericht ausgesprochen. (-> Artikel 15.1)
