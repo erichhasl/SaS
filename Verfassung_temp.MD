@@ -98,7 +98,7 @@ Wenn im Folgenden die weibliche Form verwendet wird, so ist  die männliche Form
 - (1): Alle Staatsbürgerinnen sind wahlberechtigt.
 - (2): Absatz 1 kann durch Artikel 32 der Verfassung für Einzelfälle außer Kraft gesetzt werden.
 - (3): Wahlberechtigte wählen Parteien, keine Einzelpersonen.
-- (4): Eine Partei muss mindestens die Unterstützung von 10 Bürgerinnen vorweisen können, um zur Wahl anzutreten.
+- (4): Eine Partei muss mindestens 10 Mitglieder und 20 Unterschriften vorweisen können, um zur Wahl anzutreten.
 - (5): Die Anzahl der Abgeordneten (31, davon 1 Parlamentspräsidentin) wird nun verhältnismäßig unter den gewählten Parteien verteilt, die mindestens 5% der abgegebenen Stimmen erreicht haben. 
 - (6): Parteien haben vor der Wahl Listen offenzulegen, aus denen sich erschließt, welche Abgeordnete in welcher Reihenfolge in das Parlament einziehen.
 
@@ -150,7 +150,7 @@ Wenn im Folgenden die weibliche Form verwendet wird, so ist  die männliche Form
 ### Artikel 27 (Regierung)
 - (1): Die Regierung besteht aus den Ministerinnen (Innenministerin, Außenministerin, Wirtschaftsministerin, Arbeitsministerin und Kultusministerin) und der Kanzlerin. Die Ministerinnen werden von der Kanzlerin vorgeschlagen und durch die Präsidentin ernannt. Sie müssen nicht Teil des gewählten Parlaments sein.
 - (2): Innerhalb der von der Bundeskanzlerin bestimmten Richtlinien leitet jede Ministerin seinen Geschäftsbereich selbstständig und unter eigener Verantwortung.
-- (3): Die Maximalgröße pro Ministerium beträgt 6 Mitarbeiterinnen (5 Beamtinnen, 1 Ministerin).
+- (3): Die Maximalgröße pro Ministerium beträgt 4 Mitarbeiterinnen (3 Beamtinnen, 1 Ministerin).
 
 ### Artikel 28 (Staatsanwaltschaft)
 - (1): Die Staatsanwaltschaft untersteht nicht der Regierung und wird nicht von den Parteien gestellt, sondern von dem Parlament per Mehrheitsbeschluss gewählt. 
@@ -176,7 +176,8 @@ Wenn im Folgenden die weibliche Form verwendet wird, so ist  die männliche Form
 - (5): Das Verfassungsgericht kann einstimmig die Immunität eines Abgeordneten aufheben.
 
 ### Artikel 31 (Zivil- und Strafgericht)
-- (1): Das Zivil- und Strafgericht besteht aus 5 Richterinnenn, davon sind 3 hauptberuflich und 2 täglich zufällig aus Schöffenbewerbungen ausgewählt. 
+- (1): Das Zivil- und Strafgericht besteht aus 5 Richterinnenn, davon sind 3 hauptberuflich und 2 für jeden Tag am Anbeginn der Zeit
+aus Schöffenbewerbungen ausgewählt. 
 - (2): Es ist zuständig für alle Klagen von Privatpersonen gegen andere Privatpersonen oder öffentliche Instanzen. 
 - (3): Es kann Urteile mit einer einfachen Mehrheit beschließen und Klagen mit 4 von 5 Stimmen abweisen. 
 - (4): Das Gericht kann nicht ohne Klage aktiv werden.
