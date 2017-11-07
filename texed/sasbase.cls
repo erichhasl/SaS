@@ -21,6 +21,7 @@
     left=13mm,
     right=13mm,
     top=8mm,
+    bottom=8mm,
     includeheadfoot}
 
 % ENABLE FANCY HEADERS
@@ -100,10 +101,10 @@
 \setcounter{secnumdepth}{0}
 
 % DEFINE SPACING BETWEEN ITEMS
-\setlength{\cftbeforesecskip}{-3mm}
+\setlength{\cftbeforesecskip}{1mm}
 
 \setlength{\cftbeforetoctitleskip}{0mm}
-\setlength{\cftaftertoctitleskip}{-10mm}
+\setlength{\cftaftertoctitleskip}{5cm}
 
 % SET DOTS FOR SECTIONS
 \renewcommand{\cftsecdotsep}{\cftdotsep}
@@ -118,11 +119,11 @@
 
 % CUSTOM TOC COMMAND
 \newcommand{\mycontents}{%
+    \vspace{4mm}
     \ostyle
     \begin{tabular}{lp{.9\textwidth}}
         \textbf{Inhalt:} & \tableofcontents \\
     \end{tabular}
-    \vspace*{-5cm}
 }
 
 % ---------------------------------------
@@ -133,7 +134,7 @@
 \setlength{\arrayrulewidth}{.3mm}
 
 % SET CELL HEIGHT
-\renewcommand{\arraystretch}{2.5}
+%\renewcommand{\arraystretch}{2.5}
 
 % DEFINE OWN COLUMN TYPE
 \newcolumntype{P}[1]{>{\centering\arraybackslash}p{#1}}
@@ -146,13 +147,13 @@
         \textbf{\ostyle{\HUGE{\@title}}}
     \end{center}
     \vspace{5mm}
-    \begin{tabular}{P{\dimexpr.1\textwidth-2\tabcolsep}|P{\dimexpr.8\textwidth-2\tabcolsep}|P{\dimexpr.1\textwidth-2\tabcolsep}}
+    \begin{tabular}{M{\dimexpr.1\textwidth-2\tabcolsep}|M{\dimexpr.8\textwidth-2\tabcolsep}|M{\dimexpr.1\textwidth-2\tabcolsep}@{}m{0pt}@{}}
         \hline
         \large \ostyle{\TheLastWord{\@datum}} &
         \large \ostyle{Ausgegeben in {\@place} am {\@datum}} &
         \large \ostyle{Nr. {\@edition}}
-        \\ \hline
-        \multicolumn{3}{p{\dimexpr\textwidth-2\tabcolsep}}{\mycontents} \\ \hline
+        &\\[5mm] \hline
+        \multicolumn{3}{m{\dimexpr\textwidth-2\tabcolsep}}{\mycontents} \\ \hline
     \end{tabular}
 
     \vspace{10mm}
