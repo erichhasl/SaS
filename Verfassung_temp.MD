@@ -21,7 +21,6 @@ Wenn im Folgenden die weibliche Form verwendet wird, so ist  die männliche Form
 ### Artikel 4 (Religionsfreiheit)
 - (1): Die Freiheit des Glaubens, des Gewissens und die Freiheit des religiösen und weltanschaulichen Bekenntnisses sind unverletzlich.
 - (2): Die ungestörte Religionsausübung wird gewährleistet.
-- (3): Niemand darf gegen sein Gewissen zum Kriegsdienst mit der Waffe gezwungen werden.
 
 ### Artikel 5 (Meinungsfreiheit)
 - (1): Jeder hat das Recht, seine Meinung in Wort, Schrift und Bild frei zu äußern und zu verbreiten und sich aus allgemein zugänglichen Quellen ungehindert zu unterrichten. Die Pressefreiheit und die Freiheit der Berichterstattung durch Rundfunk und Film werden gewährleistet. Eine Zensur findet nicht statt.
