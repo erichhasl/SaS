@@ -2,6 +2,8 @@
 \LoadClass[twocolumn]{article}
 
 \RequirePackage[utf8]{inputenc}
+\RequirePackage[shortlabels]{enumitem}
+\RequirePackage{environ}
 \RequirePackage{geometry}
 \RequirePackage{booktabs}
 \RequirePackage{mathptmx}
@@ -165,3 +167,26 @@
     \maketitle
     \thispagestyle{fancy}
 }
+
+% ---------------------------
+% DEFINITION OF USEFUL MACROS
+% ---------------------------
+
+% ARTICLE COUNTER
+\newcounter{articleno}
+\setcounter{articleno}{1}
+
+% AN ARTICLE (LAW) ENVIRONMENT
+\newenvironment{article}[1][nil]{
+    \def\val{#1}
+    \def\null{nil}
+    \subsubsection{Artikel {\thearticleno} {\ifx\val\null\else(#1)\fi}}
+    \stepcounter{articleno}
+    \begin{enumerate}[(1)]
+}
+{
+    \end{enumerate}
+}
+
+% JUST TO MAKE CLEAR WHICH LEVEL TO USE
+\newcommand{\segmentoflaw}[1]{\subsection{#1}}
