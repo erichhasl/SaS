@@ -3,7 +3,7 @@
 *.fdb_latexmk
 *.log
 *.out
-*.pdf
+test.pdf
 *.toc
 *.synctex.gz
 *.swo
