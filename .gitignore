@@ -6,3 +6,6 @@
 *.pdf
 *.toc
 *.synctex.gz
+*.swo
+*.swp
+*.swa
