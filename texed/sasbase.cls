@@ -221,3 +221,17 @@
 
 % INCREASE HEIGHT OF BRACKETS
 \setlength\delimitershortfall{-2pt}
+
+% ---
+% FAQ
+% ---
+
+\newcommand{\topic}[1]{\subsection{#1}}
+
+% QUESTION ENVIRONMENT
+\newenvironment{question}[1]{
+    \subsubsection{Q: #1}
+    \noindent\textbf{A:}
+}
+{
+}
