@@ -17,6 +17,7 @@
 \RequirePackage{fancyhdr}
 \RequirePackage{bm}
 \RequirePackage{roboto}
+\RequirePackage{varwidth}
 
 % SET PAGE GEOMETRY
 \geometry{
@@ -85,7 +86,14 @@
 \titleformat
     {\subsection}
     {\centering\normalfont\bf}
-    {\thesection}
+    {\thesubsection}
+    {1em}
+    {}
+
+\titleformat
+    {\subsubsection}
+    {\normalfont\bf}
+    {\thesubsubsection}
     {1em}
     {}
 
@@ -172,21 +180,44 @@
 % DEFINITION OF USEFUL MACROS
 % ---------------------------
 
+% OPTION TO ENABLE SQUARE BRACKETS OR ADDITIONS TO THE ARTICLES NAME
+\newif\ifsquare\squarefalse
+
+\newcommand{\squarestyle}{\squaretrue}
+\newcommand{\parensstyle}{\squarefalse}
+
 % ARTICLE COUNTER
 \newcounter{articleno}
 \setcounter{articleno}{1}
 
+\makeatletter
 % AN ARTICLE (LAW) ENVIRONMENT
 \newenvironment{article}[1][nil]{
     \def\val{#1}
     \def\null{nil}
-    \subsubsection{Artikel {\thearticleno} {\ifx\val\null\else(#1)\fi}}
+    \ifsquare
+        \subsubsection{Artikel {\thearticleno}}
+        \ifx\val\null
+        \else
+            \vspace*{-2mm}
+            \noindent\bracketed{\textbf{#1}}
+        \fi
+    \else
+        \subsubsection{Artikel {\thearticleno} \ifx\val\null\else(#1)\fi}
+    \fi
     \stepcounter{articleno}
     \begin{enumerate}[(1)]
 }
 {
     \end{enumerate}
 }
+\makeatother
 
 % JUST TO MAKE CLEAR WHICH LEVEL TO USE
 \newcommand{\segmentoflaw}[1]{\subsection{#1}}
+
+% TEXT IN SQUARE BRACKETS
+\newcommand{\bracketed}[1]{$\left[\varwidth{\linewidth}#1\endvarwidth\right]$}
+
+% INCREASE HEIGHT OF BRACKETS
+\setlength\delimitershortfall{-2pt}
