@@ -191,19 +191,38 @@
 \setcounter{articleno}{1}
 
 \makeatletter
-% AN ARTICLE (LAW) ENVIRONMENT
 \newenvironment{article}[1][nil]{
+    \begin{@paraorarticle}{#1}{Artikel} 
+}
+{
+    \end{@paraorarticle}
+}
+\makeatother
+
+\makeatletter
+\newenvironment{lawparagraph}[1][nil]{
+    \begin{@paraorarticle}{#1}{§}
+}
+{
+    \end{@paraorarticle}
+}
+\makeatother
+
+\makeatletter
+
+% A GENERAL ARTICLE, PARAGRAPH, etc. ENVIRONMENT
+\newenvironment{@paraorarticle}[2]{
     \def\val{#1}
     \def\null{nil}
     \ifsquare
-        \subsubsection{Artikel {\thearticleno}}
+        \subsubsection{#2 {\thearticleno}}
         \ifx\val\null
         \else
             \vspace*{-2mm}
             \noindent\bracketed{\textbf{#1}}
         \fi
     \else
-        \subsubsection{Artikel {\thearticleno} \ifx\val\null\else(#1)\fi}
+        \subsubsection{#2 {\thearticleno} \ifx\val\null\else(#1)\fi}
     \fi
     \stepcounter{articleno}
     \begin{enumerate}[(1)]
@@ -212,6 +231,12 @@
     \end{enumerate}
 }
 \makeatother
+
+% LAW COMMAND
+\newcommand{\law}[1]{
+    \section{#1}
+    \setcounter{articleno}{1}
+}
 
 % JUST TO MAKE CLEAR WHICH LEVEL TO USE
 \newcommand{\segmentoflaw}[1]{\subsection{#1}}
