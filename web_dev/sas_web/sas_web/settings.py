@@ -26,7 +26,11 @@ SECRET_KEY = os.environ.get('DJANGO_SECRET_KEY',
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = os.environ.get('DJANGO_ALLOWED_HOST', '').split(",")
+allowed = os.environ.get('DJANGO_ALLOWED_HOST', None)
+if allowed is not None:
+    ALLOWED_HOSTS = allowed.split(",")
+else:
+    ALLOWED_HOSTS = []
 
 # Define media paths e.g. for image storage
 MEDIA_URL = '/media/'
