@@ -12,3 +12,5 @@ test.pdf
 
 my.cnf
 venv
+
+*/*/*/migrations/*
