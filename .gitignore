@@ -9,6 +9,7 @@ test.pdf
 *.swo
 *.swp
 *.swa
+*.pyc
 
 my.cnf
 venv

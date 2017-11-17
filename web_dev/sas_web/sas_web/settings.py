@@ -20,13 +20,21 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # See https://docs.djangoproject.com/en/1.8/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'dnwe1fairy&@7=qoe7(w0bahnt9(&%zn8bph5&-r$1*s2$d2@h'
+SECRET_KEY = os.environ.get('DJANGO_SECRET_KEY',
+                            'dnwe1fairy&@7=qoe7(w0bahnt9(&%zn8bph5&-r$1*s2$d2@h')
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = os.environ.get('DJANGO_ALLOWED_HOST', '').split(",")
 
+# Define media paths e.g. for image storage
+MEDIA_URL = '/media/'
+MEDIA_ROOT = os.environ.get('DJANGO_MEDIA_ROOT',
+os.path.join((os.path.join(BASE_DIR, os.pardir)), "media"))
+
+# x forward
+USE_X_FORWARDED_HOST = True
 
 # Application definition
 
@@ -108,3 +116,6 @@ STATIC_URL = '/static/'
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, "static")
 ]
+
+STATIC_ROOT = os.environ.get('DJANGO_STATIC_ROOT',
+                             os.path.join((os.path.join(BASE_DIR, os.pardir)), "static"))
