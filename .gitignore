@@ -9,3 +9,6 @@ test.pdf
 *.swo
 *.swp
 *.swa
+
+my.cnf
+venv
