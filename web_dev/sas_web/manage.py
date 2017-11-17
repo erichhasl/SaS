@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 import os
 import sys
-import import platform
+import platform
 
 
 if __name__ == "__main__":
