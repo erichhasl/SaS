@@ -5,8 +5,7 @@ import platform
 
 
 if __name__ == "__main__":
-    operating_system = platform.platform
-    if operating_system.startswith( "Darwin" ):
+    if platform.system() = "Darwin":
         import pymysql
         pymysql.install_as_MySQLdb()
     
