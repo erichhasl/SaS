@@ -5,6 +5,6 @@ from .models import Entry
 
 # Register your models here.
 class EntryAdmin(admin.ModelAdmin):
-    pass
+    list_display = ('title', 'pub_date', 'element')
 
 admin.site.register(Entry, EntryAdmin)
