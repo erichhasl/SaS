@@ -1,6 +1,14 @@
 {% load static %}
 
 <html>
+    <head>
+        <link rel="shortcut icon" type="image/x-icon" href="{% static "public/images/favicon.ico" %}">
+        <title>
+            {% if appname == "startpage" %}Startseite - {% endif %}
+            {% if appname == "datenbank" %}Datenbank - {% endif %}
+            {% if appname == "meingoethopia" %}Mein Goethopia - {% endif %}
+            Goethopische Agentur für politische Bildung</title>
+    </head>
 <body> 
     
     {% include "public/header.html" %}
