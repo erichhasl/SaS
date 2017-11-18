@@ -44,17 +44,3 @@ li a {
 li a:hover:not(.active) {
     background-color: #e7e7e7;
 }
-
-#DeutschHome {
-    font-family: Helvetica, serif;
-    color: olive;
-    text-align: center;
-}
-
-#DeutschHomeText {
-    padding-left: 15px;
-    padding-right: 15px;
-    margin-left: 2%;
-    margin-right: 45%;
-    text-align: justify;
-}
