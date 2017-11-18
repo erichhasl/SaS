@@ -17,6 +17,11 @@ from django.conf.urls import include, url
 from django.contrib import admin
 
 urlpatterns = [
-    url(r'^$', include('startpage.urls')),
+    url(r'^$', include('startpage.urls', namespace='startpage', app_name='startpage')),
+    url(r'^meingoethopia', include('meingoethopia.urls',
+                                   namespace='meingoethopia',
+                                   app_name='meingoethopia')),
+    url(r'^datenbank', include('datenbank.urls', app_name='datenbank',
+                               namespace='datenbank')),
     url(r'^admin/', include(admin.site.urls)),
 ]

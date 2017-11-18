@@ -43,6 +43,8 @@ USE_X_FORWARDED_HOST = True
 # Application definition
 
 INSTALLED_APPS = (
+    'datenbank',
+    'meingoethopia',
     'startpage',
     'django.contrib.admin',
     'django.contrib.auth',
@@ -76,6 +78,7 @@ TEMPLATES = [
                 'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
+                'sas_web.contexts.appname',
             ],
         },
     },
