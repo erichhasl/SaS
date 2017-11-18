@@ -93,9 +93,9 @@ WSGI_APPLICATION = 'sas_web.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': os.environ.get('SAS_DATABASE_NAME', 'sas_db'),
+        'NAME': os.environ.get('DJANGO_DATABASE_NAME', 'sas_db'),
         'OPTIONS': {
-            'read_default_file': os.environ.get('SAS_DATABASE_CONFIG',
+            'read_default_file': os.environ.get('DJANGO_DATABASE_CONFIG',
                                                 os.path.join(BASE_DIR, 'my.cnf'))
         }
     }
