@@ -4,11 +4,9 @@
 <body> 
     
     {% include "public/header.html" %}
-
-    {% block content %}
+    {% block raw_content %}
     {% endblock %}
-
-    <p>Ende Gelände!</p>
+    {% include "public/footer.html" %}
 
 </body>
 
