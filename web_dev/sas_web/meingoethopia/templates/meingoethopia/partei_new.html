@@ -1,0 +1,14 @@
+{% extends "public/default.html" %}
+
+{% block content %}
+<p>Hier kannst Du eine Partei anmelden!</p>
+
+<form action="" method="post">
+    {% csrf_token %}
+    <table>
+        {{ form.as_table }}
+    </table>
+    <input type="submit" value="Verbindlich anmelden" />
+</form>
+
+{% endblock %}

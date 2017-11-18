@@ -2,4 +2,8 @@
 
 {% block content %}
 <p>Mein Goethopia!</p>
+
+<p><a href="{% url "meingoethopia:betrieb_new" %}">Betrieb anmelden</a></p>
+<p><a href="{% url "meingoethopia:partei_new" %}">Partei gründen</a></p>
+<p><a href="{% url "meingoethopia:praesident_werden" %}">Als Präsidentin aufstellen lassen</a></p>
 {% endblock %}

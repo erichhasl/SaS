@@ -1,6 +1,78 @@
 from django.shortcuts import render
+from django.http import HttpResponseRedirect
+from django import forms
+from .models import Betrieb, Partei, PresidentCandidate
+
+
+class BetriebForm(forms.Form):
+    name = forms.CharField(label='Name des Betriebs', max_length=100)
+    manager = forms.CharField(label='Betriebsleiter', max_length=200)
+    email = forms.EmailField(label='Kontakt Email')
+    business_idea = forms.CharField(label='Idee')
+
+
+class ParteiForm(forms.Form):
+    name = forms.CharField(label='Name der Partei', max_length=100)
+    abbreviation = forms.CharField(label='Abkürzung', max_length=5)
+    chef = forms.CharField(label='Parteivorsitzende', max_length=200)
+    email = forms.EmailField(label='Kontakt Email')
+    description = forms.CharField(label='Beschreibung')
+
+
+class PresidentForm(forms.Form):
+    name = forms.CharField(label='Name', max_length=100)
+    email = forms.EmailField(label='Kontakt Email')
+    motivation = forms.CharField(label='Motivation')
 
 
 # Create your views here.
 def index(request):
     return render(request, "meingoethopia/index.html")
+
+
+def betrieb_new(request):
+    if request.method == 'POST':
+        form = BetriebForm(request.POST)
+        if form.is_valid():
+            betrieb = Betrieb(name=form.cleaned_data.get('name'),
+                              manager=form.cleaned_data.get('manager'),
+                              email=form.cleaned_data.get('email'),
+                              business_idea=form.cleaned_data.get('business_idea'),
+                              confirmed=False)
+            betrieb.save()
+            return HttpResponseRedirect('/')
+    else:
+        form = BetriebForm()
+    return render(request, "meingoethopia/betrieb_new.html", {'form': form})
+
+
+def partei_new(request):
+    if request.method == 'POST':
+        form = ParteiForm(request.POST)
+        if form.is_valid():
+            partei = Partei(name=form.cleaned_data.get('name'),
+                            abbreviation=form.cleaned_data.get('abbreviation'),
+                            chef=form.cleaned_data.get('chef'),
+                            email=form.cleaned_data.get('email'),
+                            description=form.cleaned_data.get('description'),
+                            confirmed=False)
+            partei.save()
+            return HttpResponseRedirect('/')
+    else:
+        form = ParteiForm()
+    return render(request, "meingoethopia/partei_new.html", {'form': form})
+
+
+def praesident_werden(request):
+    if request.method == 'POST':
+        form = PresidentForm(request.POST)
+        if form.is_valid():
+            president = PresidentCandidate(name=form.cleaned_data.get('name'),
+                                           email=form.cleaned_data.get('email'),
+                                           motivation=form.cleaned_data.get('motivation'),
+                                           confirmed=False)
+            president.save()
+            return HttpResponseRedirect('/')
+    else:
+        form = PresidentForm()
+    return render(request, "meingoethopia/president.html", {'form': form})
