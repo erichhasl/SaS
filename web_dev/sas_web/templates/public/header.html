@@ -1,138 +1,38 @@
 {% load static %}
 
+<link rel="stylesheet" type="text/css" href="{% static "public/css/header.css" %}">
+
 <div id=header>
-            <style>
-                html {
-                    background-color: white;
-                }
-                #logo {
-                    width: 90%;
-                    padding-left: 2%;
-                    padding-top: 2%;
-                }
-                .top-links {
-                    color: #929292;
-                    vertical-align: top;
-                    padding-top: 5px;
-                    text-align: center;
-                }
-                #logotablerow {
-                    padding-right: 2%;
-                }
-                #search {
-                    vertical-align: middle;
-                }
-                #search_icon {
-                    width: 80%;
-                    vertical-align: middle;
-                    padding-left: 0px;
-                }
-                table{
-                    border-collapse: collapse;
-                    border: none;
-                }
-                table tr{
-                    border: none;
-                    vertical-align: top;
-                }
-
-                table td{
-                    padding-left: 10px;
-                    padding-top: 2px;
-                    border: none;
-                }
-                .link-container {
-                    text-align: center;
-                    width: 10%;
-                }
-                .allcenter {
-                    vertical-align: middle;
-                    text-align: right;
-                    padding-right: 10px;
-                }
-                #search {
-                    font-size: 16pt;
-                    background: #D6D5D5;
-                    color: black;
-                }
-                #search:focus{
-                    font-size: 16pt;
-                    background: #D6D5D5;
-                    color: black;
-                    outline: none;
-                }
-                ul {
-                    list-style-type: none;
-                    position: relative;
-                    margin-left: 2%;
-                    margin-top: 20px;
-                    padding: 0;
-                    overflow: hidden;
-                    width: 96%;
-                    background: #D6D5D5;
-                    border: none;
-                }
-
-                li {
-                    float: left;
-                    width: 30%;
-                    margin-top: 0.5%;
-                    margin-bottom: 0.5%;
-                    vertical-align: middle;
-                    padding-left: 3%;
-                    color: #929292;
-                }
-
-                li a {
-                    display: block;
-                    color: #666;
-                    text-align: center;
-                    padding: 14px 16px;
-                    text-decoration: none;
-                    border-top-right-radius: 5px;
-                    border-top-left-radius: 2.5px;
-                }
-
-                .active {
-                    background: #9F2D17;
-                    color: white;
-                }
-
-                li a:hover:not(.active) {
-                    background: #929292;
-                }
-
-            </style>
-            <table class="table">
-                <tr>
-                <td id ="logotablerow", width="20%">
-                    <img id="logo" src="apb_icon.jpeg" alt="logo">
-                </td>
-                <td class="link-container">
-                    <a class="top-links", href="https://www.tagesschau.de">tagesschau.de</a>
-                </td>
-                <td class="link-container">
-                    <a class="top-links", href="https://www.spiegel.de">spiegel.de</a>
-                </td>
-                <td class="link-container">
-                    <a class="top-links", href="https://www.zeit.de">zeit.de</a>
-                </td>
-                <td class="link-container">
-                    <a class="top-links", href="https://www.bpb.de">bpb.de</a>
-                </td>
-                <td vertical-align="middle", width="25%" class="allcenter">
-                    <input type="text" id="search" maxlength="30" placeholder="Datenbank durchsuchen">
-                </td>
-                <td width="5%" class="allcenter">
-                    <a href="http://www.dohiy.com/wp-content/uploads/2014/06/itsatrap.jpg"><img id="search_icon" src="search_icon.png" alt="search"></a>
-                </td>
-                </tr>
-            </table>
-            <div id="navigation">
-            <ul>
-                <li><a class="active" href="https://www.none.com">Gesetzesblatt</a></li>
-                <li><a href="https://www.none.com">Datenbank</a></li>
-                <li><a href="https://www.none.com">Mein Goethopia</a></li>         
-            </ul>
-            </div>
-        </div>
+    <table class="table">
+        <tr>
+        <td id ="logotablerow", width="20%">
+            <img id="logo" src="{% static "public/images/apb_icon.png" %}" alt="logo">
+        </td>
+        <td class="link-container">
+            <a class="top-links", href="https://www.tagesschau.de">tagesschau.de</a>
+        </td>
+        <td class="link-container">
+            <a class="top-links", href="https://www.spiegel.de">spiegel.de</a>
+        </td>
+        <td class="link-container">
+            <a class="top-links", href="https://www.zeit.de">zeit.de</a>
+        </td>
+        <td class="link-container">
+            <a class="top-links", href="https://www.bpb.de">bpb.de</a>
+        </td>
+        <td vertical-align="middle", width="25%" class="allcenter">
+            <input type="text" id="search" maxlength="30" placeholder="Datenbank durchsuchen">
+        </td>
+        <td width="5%" class="allcenter">
+            <a href="http://www.dohiy.com/wp-content/uploads/2014/06/itsatrap.jpg"><img id="search_icon" src="{% static "public/images/search_icon.png" %}" alt="search"></a>
+        </td>
+        </tr>
+    </table>
+    <div id="navigation">
+    <ul>
+        <li><a class="active" href="https://www.none.com">Gesetzesblatt</a></li>
+        <li><a href="https://www.none.com">Datenbank</a></li>
+        <li><a href="https://www.none.com">Mein Goethopia</a></li>         
+    </ul>
+    </div>
+</div>
