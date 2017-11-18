@@ -1,5 +1,4 @@
 from django.shortcuts import render
-from django.http import HttpResponseRedirect
 from django import forms
 from .models import Betrieb, Partei, PresidentCandidate
 
@@ -40,7 +39,7 @@ def betrieb_new(request):
                               business_idea=form.cleaned_data.get('business_idea'),
                               confirmed=False)
             betrieb.save()
-            return HttpResponseRedirect('/')
+            return render_confirmation(request)
     else:
         form = BetriebForm()
     return render(request, "meingoethopia/betrieb_new.html", {'form': form})
@@ -57,7 +56,7 @@ def partei_new(request):
                             description=form.cleaned_data.get('description'),
                             confirmed=False)
             partei.save()
-            return HttpResponseRedirect('/')
+            return render_confirmation(request)
     else:
         form = ParteiForm()
     return render(request, "meingoethopia/partei_new.html", {'form': form})
@@ -72,7 +71,11 @@ def praesident_werden(request):
                                            motivation=form.cleaned_data.get('motivation'),
                                            confirmed=False)
             president.save()
-            return HttpResponseRedirect('/')
+            return render_confirmation(request)
     else:
         form = PresidentForm()
     return render(request, "meingoethopia/president.html", {'form': form})
+
+
+def render_confirmation(request):
+    return render(request, "meingoethopia/confirmed.html")
