@@ -1,0 +1,60 @@
+html {
+    background-color: white;
+}
+
+h1 {
+    padding-top: 50px;
+    font-family: Palatino, serif;
+    font-size: 32px;
+    text-align: center;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    border: 2px solid #e7e7e7;
+    background-color: #f3f3f3;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 2.5px;
+    color: #666;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.active {
+    background-color: olivedrab;
+    color: white;
+}
+
+li a:hover:not(.active) {
+    background-color: #e7e7e7;
+}
+
+#DeutschHome {
+    font-family: Helvetica, serif;
+    color: olive;
+    text-align: center;
+}
+
+#DeutschHomeText {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: 2%;
+    margin-right: 45%;
+    text-align: justify;
+}
