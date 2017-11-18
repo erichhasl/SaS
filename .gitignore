@@ -15,3 +15,5 @@ my.cnf
 venv
 
 */*/*/migrations/*
+
+web_dev/media/*

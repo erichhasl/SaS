@@ -15,8 +15,12 @@ Including another URLconf
 """
 from django.conf.urls import include, url
 from django.contrib import admin
+from django.conf.urls.static import static
+from django.conf import settings
 
-urlpatterns = [
+urlpatterns = static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+
+urlpatterns += [
     url(r'^$', include('startpage.urls', namespace='startpage', app_name='startpage')),
     url(r'^meingoethopia', include('meingoethopia.urls',
                                    namespace='meingoethopia',

@@ -1,5 +1,35 @@
 {% extends "public/default.html" %}
+{% load static %}
 
 {% block content %}
-<p>Datenbank</p>
+<link rel="stylesheet" type="text/css" href="{% static "datenbank/css/index.css"%}">
+<div id="datenbank_html">
+    <table class="tabledatabase">
+        <tr class="trdatabase">
+            <td class="tddatabase", colspan=4>
+                <p id="description">
+                    Dies ist eine Datenbank mit allen Dokumenten, die die
+                    Goethopische Agentur für politische Bildung herausgebracht hat.
+                    Jedes der Elemente ist auf das dazugehörige PDF-Dokument verlinkt.
+                </p>
+            </td>
+        </tr>
+        {% for row in rows %}
+        <tr class="trdatabase">
+            {% for entry in row %}
+            <td class="tddatabase", align="{% cycle "left" "center" "right" %}">
+                <div class="polaroid">
+                    <a class="thumbnail" href="{{ entry.element.url }}">
+                        <img src="{{ entry.image.url }}" alt="Verfassung">
+                    </a>
+                    <div class="container">
+                        <p>{{ entry.title }}</p>
+                    </div>
+                </div> 
+            </td>
+            {% endfor %}
+        </tr>
+        {% endfor %}
+    </table>
+</div>
 {% endblock %}
