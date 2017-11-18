@@ -1,6 +1,6 @@
 from django.shortcuts import render
 from django import forms
-from .models import Betrieb, Partei, PresidentCandidate
+from .models import Betrieb, Partei, PresidentCandidate, Question
 
 
 class BetriebForm(forms.Form):
@@ -22,6 +22,12 @@ class PresidentForm(forms.Form):
     name = forms.CharField(label='Name', max_length=100)
     email = forms.EmailField(label='Kontakt Email')
     motivation = forms.CharField(label='Motivation')
+
+
+class QuestionForm(forms.Form):
+    subject = forms.CharField(label='Thema', max_length=100)
+    email = forms.EmailField(label='Kontakt Email')
+    content = forms.CharField(label='Frage')
 
 
 # Create your views here.
@@ -75,6 +81,21 @@ def praesident_werden(request):
     else:
         form = PresidentForm()
     return render(request, "meingoethopia/president.html", {'form': form})
+
+
+def question_new(request):
+    if request.method == 'POST':
+        form = QuestionForm(request.POST)
+        if form.is_valid():
+            question = Question(subject=form.cleaned_data.get('subject'),
+                                email=form.cleaned_data.get('email'),
+                                content=form.cleaned_data.get('content'),
+                                answered=False)
+            question.save()
+            return render_confirmation(request)
+    else:
+        form = QuestionForm()
+    return render(request, "meingoethopia/question_new.html", {'form': form})
 
 
 def render_confirmation(request):

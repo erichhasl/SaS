@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import Betrieb, Partei, PresidentCandidate
+from .models import Betrieb, Partei, PresidentCandidate, Question
 
 
 # Register your models here.
@@ -17,6 +17,12 @@ class PresidentAdmin(admin.ModelAdmin):
     list_display = ('name', 'confirmed')
     list_filter = ('confirmed',)
 
+
+class QuestionAdmin(admin.ModelAdmin):
+    list_display = ('subject', 'answered')
+    list_filter = ('answered',)
+
 admin.site.register(Betrieb, BetriebAdmin)
 admin.site.register(Partei, ParteiAdmin)
 admin.site.register(PresidentCandidate, PresidentAdmin)
+admin.site.register(Question, QuestionAdmin)

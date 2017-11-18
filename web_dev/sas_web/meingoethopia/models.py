@@ -45,3 +45,17 @@ class PresidentCandidate(models.Model):
     class Meta:
         verbose_name = 'Präsidentschaftskandidat'
         verbose_name_plural = 'Präsidentschaftskandidaten'
+
+
+class Question(models.Model):
+    subject = models.CharField('Betreff', max_length=100)
+    email = models.EmailField('Kontakt Email')
+    content = models.TextField('Inhalt')
+    answered = models.BooleanField('Beantwortet', default=False)
+
+    def __str__(self):
+        return str(self.subject)
+
+    class Meta:
+        verbose_name = 'Frage'
+        verbose_name_plural = 'Fragen'
