@@ -1,5 +1,5 @@
 {% extends "public/default.html" %}
-
+{% load static %}
 {% block content %}
 
 <table>
@@ -26,7 +26,7 @@
                     Sitzverteilung im Parlament nach der Wahl:
                 </p>
                 <center class="imagewrap">
-                <img src="Tabelle_Beispiel_Sitzverteilung.png" alt="Wahlergebnis" class="images">
+                <img src="{% static "startpage/images/Tabelle_Beispiel_Sitzverteilung.png" %}" alt="Wahlergebnis" class="images">
                 </center>
                 <p class="paragraph">
                     <br>
@@ -34,7 +34,7 @@
                     <br>
                 </p>
                 <center class="imagewrap">
-                <img src="Parlament.png" alt="Sitverteilung" class="images">
+                <img src="{% static "startpage/images/Parlament.png" %}" alt="Sitverteilung" class="images">
                 </center>
                 <p class="paragraph">
                 Es ist nun am Parlament, eine Parlamentspräsidentin zu
@@ -50,7 +50,7 @@
                 und Wahl der Richter.
                 </p>
                 <center class="imagewrap">
-                <img src="Verfassung_modell.png" alt="Modell der Verfassung" class="images">
+                <img src="{% static "startpage/images/Verfassung_modell.png" %}" alt="Modell der Verfassung" class="images">
                 </center>
                 <h1 class="red" id="wahl">Wahl</h1>
                 <h3 id="wann">Wann wird die Wahl stattfinden?</h3>
