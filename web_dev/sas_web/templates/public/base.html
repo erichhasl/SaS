@@ -1,8 +1,16 @@
 {% load static %}
 
-<img src="{% static "public/images/apb_icon.png" %}" />
+<html>
+<body> 
+    
+    {% include "public/header.html" %}
 
-{% block content %}
-{% endblock %}
+    {% block content %}
+    {% endblock %}
 
-<p>Impressum: N.H (der ist für alles hier verantwortlich)</p>
+    <p>Ende Gelände!</p>
+
+</body>
+
+</html>
+
