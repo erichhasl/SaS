@@ -16,7 +16,8 @@
     padding-top: 10px;
 }
 .thumbnail {
-    display: inline-block;
+    display: block;
+    margin: 0 auto;
     border: 1px solid black;
     width: 20%;
 }
