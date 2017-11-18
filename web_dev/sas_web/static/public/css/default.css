@@ -2,3 +2,12 @@
     margin-left: 5%;
     margin-right: 5%;
 }
+
+#content a {
+    color: #9F2D17;
+    text-decoration: none;
+}
+
+#content a:hover {
+    color: #48140a;
+}
