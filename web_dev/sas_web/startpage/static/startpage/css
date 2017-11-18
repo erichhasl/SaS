@@ -1,0 +1,70 @@
+                    #info_html{
+                        margin-left: 2%;
+                        width: 96%;
+                    }
+                    .dates_ul {
+                        list-style-type: none;
+                        padding: 0 0;
+                        margin: 0, 0;
+                        background: none;
+                        padding-left: 3%;
+                    }
+                    .dates{
+                        display: inherit;
+                        background: none;
+                        color: black;
+                        width: 70%;
+                    }
+                    .red {
+                        color: #9F2D17; 
+                    }
+                    .paragraph {
+                        display: inherit;
+                        width: 70%;
+                        text-align: justify;
+                        padding-left: 3%;
+                    }
+                    .images {
+                        width: 50%;
+                    }
+                    .imagewrap {
+                        padding-left: 3%;
+                        width: 70%;
+                    }
+                    .tablenav {
+                        position: sticky;
+                    }
+                    ul.meinlinks {
+                        padding-left 10px;
+                        list-style: none;
+                        margin-left: 0%;
+                        width: 100%;
+                        position: -webkit-sticky;
+                        position: sticky;
+                        z-index: 2;
+                    }
+                    ul.meinlinks li:before { 
+                        content: "";
+                        border-color: transparent #111;
+                        border-style: solid;
+                        border-width: 0.35em 0 0.35em 0.45em;
+                        display: block;
+                        height: 0;
+                        width: 0;
+                        left: -1em;
+                        top: 0.9em;
+                        position: relative;
+                    }
+
+                    ul.meinlinks a, ul.meinlinks a:visited {
+                        text-decoration: none;
+                        color: #9F2D17;
+                    }
+
+                    ul.meinlinks a:hover {
+                        color: #48140a;
+                    }
+                    .inhalt {
+                        text-align: center;
+                        color: #9F2D17;
+                    }
