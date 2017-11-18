@@ -1,6 +1,9 @@
 {% extends "public/base.html" %}
+{% load static %}
 
 {% block raw_content %}
+
+<link rel="stylesheet" type="text/css" href="{% static "public/css/default.css" %}">
 <div id="content">
     {% block content %}
     {% endblock %}

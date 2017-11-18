@@ -29,10 +29,10 @@
         </tr>
     </table>
     <div id="navigation">
-    <ul>
-        <li><a {% if appname == "startpage" %}class="active"{% endif %} href="/">Gesetzesblatt</a></li>
-        <li><a {% if appname == "datenbank" %}class="active"{% endif %} href="{% url "datenbank:index" %}">Datenbank</a></li>
-        <li><a {% if appname == "meingoethopia" %}class="active"{% endif %} href="{% url "meingoethopia:index" %}">Mein Goethopia</a></li>         
+    <ul class="navbar">
+        <li class ="navbar"><a {% if appname == "startpage" %}class="active"{% endif %} href="/">Gesetzesblatt</a></li>
+        <li class="navbar"><a {% if appname == "datenbank" %}class="active"{% endif %} href="{% url "datenbank:index" %}">Datenbank</a></li>
+        <li class="navbar"><a {% if appname == "meingoethopia" %}class="active"{% endif %} href="{% url "meingoethopia:index" %}">Mein Goethopia</a></li>         
     </ul>
     </div>
 </div>

@@ -1,9 +1,17 @@
 {% extends "public/default.html" %}
+{% load static %}
 
 {% block content %}
-<p>Mein Goethopia!</p>
+<link rel="stylesheet" type="text/css" href="{% static "meingoethopia/css/index.css" %}">
+<p>Du möchtest einen Betrieb anmelden? Oder eine Partei gründen? Vielleicht sogar als Präsidentin
+kandidieren?</p>
 
-<p><a href="{% url "meingoethopia:betrieb_new" %}">Betrieb anmelden</a></p>
-<p><a href="{% url "meingoethopia:partei_new" %}">Partei gründen</a></p>
-<p><a href="{% url "meingoethopia:praesident_werden" %}">Als Präsidentin aufstellen lassen</a></p>
+<p>Dann bist du hier genau richtig!</p>
+
+<ul class="meinlinks">
+    <li><a href="{% url "meingoethopia:betrieb_new" %}">Betrieb anmelden</a></li>
+    <li><a href="{% url "meingoethopia:partei_new" %}">Partei gründen</a></li>
+    <li><a href="{% url "meingoethopia:praesident_werden" %}">Als Präsidentin aufstellen lassen</a></li>
+</ul>
+
 {% endblock %}
