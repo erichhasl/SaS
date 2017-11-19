@@ -24,7 +24,11 @@ SECRET_KEY = os.environ.get('DJANGO_SECRET_KEY',
                             'dnwe1fairy&@7=qoe7(w0bahnt9(&%zn8bph5&-r$1*s2$d2@h')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+debug = os.environ.get('DJANGO_DEBUG', None)
+if debug:
+    DEBUG = False if debug == '0' else True
+else:
+    DEBUG = True
 
 allowed = os.environ.get('DJANGO_ALLOWED_HOST', None)
 if allowed is not None:
