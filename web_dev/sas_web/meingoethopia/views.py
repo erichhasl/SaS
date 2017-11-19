@@ -48,6 +48,7 @@ def betrieb_new(request):
                               manager=form.cleaned_data.get('manager'),
                               email=form.cleaned_data.get('email'),
                               business_idea=form.cleaned_data.get('business_idea'),
+                              ip_address=get_client_ip(request),
                               confirmed=False)
             betrieb.save()
             return render_confirmation(request)
@@ -105,3 +106,12 @@ def question_new(request):
 
 def render_confirmation(request):
     return render(request, "meingoethopia/confirmed.html")
+
+
+def get_client_ip(request):
+    x_forwarded_for = request.META.get('HTTP_X_FORWARDED_FOR')
+    if x_forwarded_for:
+        ip = x_forwarded_for.split(',')[0]
+    else:
+        ip = request.META.get('REMOTE_ADDR')
+    return ip

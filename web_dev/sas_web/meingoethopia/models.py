@@ -7,6 +7,7 @@ class Betrieb(models.Model):
     manager = models.CharField('Betriebsleiter', max_length=200)
     email = models.EmailField('Kontakt Email')
     business_idea = models.TextField('Idee')
+    ip_address = models.CharField('IP Adresse', max_length=50, blank=True)
     confirmed = models.BooleanField('Bestätigt', default=False)
 
     def __str__(self):
@@ -23,6 +24,7 @@ class Partei(models.Model):
     chef = models.CharField('Parteivorsitzende', max_length=200)
     email = models.EmailField('Kontakt Email')
     description = models.TextField('Beschreibung (Ziele etc.)')
+    ip_address = models.CharField('IP Adresse', max_length=50, blank=True)
     confirmed = models.BooleanField('Bestätigt', default=False)
 
     def __str__(self):
@@ -37,6 +39,7 @@ class PresidentCandidate(models.Model):
     name = models.CharField('Name', max_length=100)
     email = models.EmailField('Kontakt Email')
     motivation = models.TextField('Motivation')
+    ip_address = models.CharField('IP Adresse', max_length=50, blank=True)
     confirmed = models.BooleanField('Bestätigt', default=False)
 
     def __str__(self):
@@ -51,6 +54,7 @@ class Question(models.Model):
     subject = models.CharField('Betreff', max_length=100)
     email = models.EmailField('Kontakt Email')
     content = models.TextField('Inhalt')
+    ip_address = models.CharField('IP Adresse', max_length=50, blank=True)
     answered = models.BooleanField('Beantwortet', default=False)
 
     def __str__(self):
