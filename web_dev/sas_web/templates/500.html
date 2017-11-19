@@ -1,0 +1,10 @@
+{% extends "public/default.html" %}
+
+{% block content %}
+<h1>Tut mir leid, das sollte nicht vorkommen!</h1>
+
+<p>Es ist ein interner Fehler aufgetreten, bei Fragen wende dich einfach per Kontakt an uns.</p>
+
+<p><a href="{% url "startpage:index" %}">Hier</a> geht es zurück zur Startseite.</p>
+
+{% endblock %}
