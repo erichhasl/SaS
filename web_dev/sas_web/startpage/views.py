@@ -8,3 +8,7 @@ def index(request):
 
 def impressum(request):
     return render(request, 'startpage/impressum.html')
+
+
+def banned(request):
+    return render(request, 'startpage/bann.html')
