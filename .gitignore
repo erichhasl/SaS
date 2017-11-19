@@ -17,3 +17,4 @@ venv
 */*/*/migrations/*
 
 web_dev/media/*
+web_dev/static/*
