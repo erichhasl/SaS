@@ -66,6 +66,7 @@ def partei_new(request):
                             chef=form.cleaned_data.get('chef'),
                             email=form.cleaned_data.get('email'),
                             description=form.cleaned_data.get('description'),
+                            ip_address=get_client_ip(request),
                             confirmed=False)
             partei.save()
             return render_confirmation(request)
@@ -81,6 +82,7 @@ def praesident_werden(request):
             president = PresidentCandidate(name=form.cleaned_data.get('name'),
                                            email=form.cleaned_data.get('email'),
                                            motivation=form.cleaned_data.get('motivation'),
+                                           ip_address=get_client_ip(request),
                                            confirmed=False)
             president.save()
             return render_confirmation(request)
@@ -96,6 +98,7 @@ def question_new(request):
             question = Question(subject=form.cleaned_data.get('subject'),
                                 email=form.cleaned_data.get('email'),
                                 content=form.cleaned_data.get('content'),
+                                ip_address=get_client_ip(request),
                                 answered=False)
             question.save()
             return render_confirmation(request)
