@@ -8,7 +8,7 @@ class BetriebForm(forms.Form):
     name = forms.CharField(label='Name des Betriebs', max_length=100)
     manager = forms.CharField(label='Betriebsleiter', max_length=200)
     email = forms.EmailField(label='Kontakt Email')
-    business_idea = forms.CharField(label='Idee')
+    business_idea = forms.CharField(label='Idee', widget=forms.Textarea)
     captcha = CaptchaField()
 
 
@@ -17,21 +17,21 @@ class ParteiForm(forms.Form):
     abbreviation = forms.CharField(label='Abkürzung', max_length=5)
     chef = forms.CharField(label='Parteivorsitzende', max_length=200)
     email = forms.EmailField(label='Kontakt Email')
-    description = forms.CharField(label='Beschreibung')
+    description = forms.CharField(label='Beschreibung', widget=forms.Textarea)
     captcha = CaptchaField()
 
 
 class PresidentForm(forms.Form):
     name = forms.CharField(label='Name', max_length=100)
     email = forms.EmailField(label='Kontakt Email')
-    motivation = forms.CharField(label='Motivation')
+    motivation = forms.CharField(label='Motivation', widget=forms.Textarea)
     captcha = CaptchaField()
 
 
 class QuestionForm(forms.Form):
     subject = forms.CharField(label='Thema', max_length=100)
     email = forms.EmailField(label='Kontakt Email')
-    content = forms.CharField(label='Frage')
+    content = forms.CharField(label='Frage', widget=forms.Textarea)
     captcha = CaptchaField()
 
 
