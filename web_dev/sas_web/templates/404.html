@@ -2,5 +2,9 @@
 
 {% block content %}
 <h1>Huch? Wo willst du denn hin?</h1>
+<p>Normalerweise kenne ich mich hier ganz gut aus, aber von <b>{{ url }}</b> habe ich noch nie
+gehört. Vielleicht meintest du ja etwas anderes?</p>
+
 <p><a href="{% url "startpage:index" %}">Hier</a> geht es zurück zur Startseite.</p>
+
 {% endblock %}
