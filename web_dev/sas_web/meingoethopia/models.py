@@ -9,6 +9,7 @@ class Betrieb(models.Model):
     business_idea = models.TextField('Idee')
     ip_address = models.CharField('IP Adresse', max_length=50, blank=True)
     confirmed = models.BooleanField('Bestätigt', default=False)
+    approved = models.BooleanField('Zugelassen', default=False)
 
     def __str__(self):
         return str(self.name)
@@ -26,6 +27,7 @@ class Partei(models.Model):
     description = models.TextField('Beschreibung (Ziele etc.)')
     ip_address = models.CharField('IP Adresse', max_length=50, blank=True)
     confirmed = models.BooleanField('Bestätigt', default=False)
+    approved = models.BooleanField('Zugelassen', default=False)
 
     def __str__(self):
         return str(self.name)
@@ -41,6 +43,7 @@ class PresidentCandidate(models.Model):
     motivation = models.TextField('Motivation')
     ip_address = models.CharField('IP Adresse', max_length=50, blank=True)
     confirmed = models.BooleanField('Bestätigt', default=False)
+    approved = models.BooleanField('Zugelassen', default=False)
 
     def __str__(self):
         return str(self.name)

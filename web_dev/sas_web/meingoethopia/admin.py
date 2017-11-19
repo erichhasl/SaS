@@ -14,20 +14,21 @@ ban_ip.short_description = "Urheber ausgewählter Eintrage verbannen"
 
 # Register your models here.
 class BetriebAdmin(admin.ModelAdmin):
-    list_display = ('name', 'manager', 'confirmed')
-    list_filter = ('confirmed',)
+    list_display = ('name', 'manager', 'confirmed', 'approved')
+    list_filter = ('confirmed', 'approved')
     actions = [ban_ip]
 
 
 class ParteiAdmin(admin.ModelAdmin):
-    list_display = ('name', 'abbreviation', 'chef', 'description', 'confirmed')
-    list_filter = ('confirmed',)
+    list_display = ('name', 'abbreviation', 'chef', 'description', 'confirmed',
+                    'approved')
+    list_filter = ('confirmed', 'approved')
     actions = [ban_ip]
 
 
 class PresidentAdmin(admin.ModelAdmin):
-    list_display = ('name', 'confirmed')
-    list_filter = ('confirmed',)
+    list_display = ('name', 'confirmed', 'approved')
+    list_filter = ('confirmed', 'approved')
     actions = [ban_ip]
 
 
