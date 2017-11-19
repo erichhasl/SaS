@@ -18,6 +18,8 @@ from django.contrib import admin
 from django.conf.urls.static import static
 from django.conf import settings
 
+from .views import error_404
+
 urlpatterns = static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 
 urlpatterns += [
@@ -28,5 +30,7 @@ urlpatterns += [
                                 namespace='datenbank')),
     url(r'^admin/', include(admin.site.urls)),
     url(r'^captcha/', include('captcha.urls')),
-    url(r'^', include('startpage.urls', namespace='startpage', app_name='startpage'))
+    url(r'^', include('startpage.urls', namespace='startpage', app_name='startpage')),
 ]
+
+handler404 = error_404
