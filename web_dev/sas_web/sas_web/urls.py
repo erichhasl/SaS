@@ -27,5 +27,6 @@ urlpatterns += [
     url(r'^datenbank/', include('datenbank.urls', app_name='datenbank',
                                 namespace='datenbank')),
     url(r'^admin/', include(admin.site.urls)),
+    url(r'^captcha/', include('captcha.urls')),
     url(r'^', include('startpage.urls', namespace='startpage', app_name='startpage'))
 ]

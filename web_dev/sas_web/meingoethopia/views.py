@@ -1,5 +1,6 @@
 from django.shortcuts import render
 from django import forms
+from captcha.fields import CaptchaField
 from .models import Betrieb, Partei, PresidentCandidate, Question
 
 
@@ -8,6 +9,7 @@ class BetriebForm(forms.Form):
     manager = forms.CharField(label='Betriebsleiter', max_length=200)
     email = forms.EmailField(label='Kontakt Email')
     business_idea = forms.CharField(label='Idee')
+    captcha = CaptchaField()
 
 
 class ParteiForm(forms.Form):
@@ -16,18 +18,21 @@ class ParteiForm(forms.Form):
     chef = forms.CharField(label='Parteivorsitzende', max_length=200)
     email = forms.EmailField(label='Kontakt Email')
     description = forms.CharField(label='Beschreibung')
+    captcha = CaptchaField()
 
 
 class PresidentForm(forms.Form):
     name = forms.CharField(label='Name', max_length=100)
     email = forms.EmailField(label='Kontakt Email')
     motivation = forms.CharField(label='Motivation')
+    captcha = CaptchaField()
 
 
 class QuestionForm(forms.Form):
     subject = forms.CharField(label='Thema', max_length=100)
     email = forms.EmailField(label='Kontakt Email')
     content = forms.CharField(label='Frage')
+    captcha = CaptchaField()
 
 
 # Create your views here.

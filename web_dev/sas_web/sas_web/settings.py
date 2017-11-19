@@ -43,6 +43,7 @@ USE_X_FORWARDED_HOST = True
 # Application definition
 
 INSTALLED_APPS = (
+    'captcha',
     'datenbank',
     'meingoethopia',
     'startpage',
