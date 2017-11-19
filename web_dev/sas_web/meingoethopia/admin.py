@@ -22,19 +22,19 @@ class BetriebAdmin(admin.ModelAdmin):
 class ParteiAdmin(admin.ModelAdmin):
     list_display = ('name', 'abbreviation', 'chef', 'description', 'confirmed')
     list_filter = ('confirmed',)
-    actions = ('ban_ip',)
+    actions = [ban_ip]
 
 
 class PresidentAdmin(admin.ModelAdmin):
     list_display = ('name', 'confirmed')
     list_filter = ('confirmed',)
-    actions = ('ban_ip',)
+    actions = [ban_ip]
 
 
 class QuestionAdmin(admin.ModelAdmin):
     list_display = ('subject', 'answered')
     list_filter = ('answered',)
-    actions = ('ban_ip',)
+    actions = [ban_ip]
 
 admin.site.register(Betrieb, BetriebAdmin)
 admin.site.register(Partei, ParteiAdmin)
