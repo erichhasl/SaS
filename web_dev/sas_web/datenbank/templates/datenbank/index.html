@@ -14,6 +14,15 @@
                 </p>
             </td>
         </tr>
+        {% if rows|length == 0 %}
+        <tr>
+            <td class="tddatabase", colspan=4>
+                <p id="description">
+                    <b>Keine Einträge für den Suchbegriff "{{ query }}" gefunden.</b>
+                </p>
+            </td>
+        </tr>
+        {% endif %}
         {% for row in rows %}
         <tr class="trdatabase">
             {% for entry in row %}

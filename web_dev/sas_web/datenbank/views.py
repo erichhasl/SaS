@@ -6,9 +6,15 @@ from .models import Entry
 
 # Create your views here.
 def index(request):
-    rows = group(Entry.objects.all(), 3)
-    print("rows", rows)
-    return render(request, "datenbank/index.html", {'rows': rows})
+    query = ""
+    if request.method == 'POST':
+        query = request.POST['query']
+        objects = Entry.objects.filter(title__icontains=query)
+    else:
+        objects = Entry.objects.all()
+    rows = group(objects, 3)
+    return render(request, "datenbank/index.html", {'rows': rows,
+                                                    'query': query})
 
 
 def group(l, n):

@@ -3,31 +3,34 @@
 <link rel="stylesheet" type="text/css" href="{% static "public/css/header.css" %}">
 
 <div id=header>
-    <table class="table">
-        <tr>
-        <td id ="logotablerow", width="20%">
-            <img id="logo" src="{% static "public/images/apb_icon.png" %}" alt="logo">
-        </td>
-        <td class="link-container">
-            <a class="top-links", href="https://www.tagesschau.de">tagesschau.de</a>
-        </td>
-        <td class="link-container">
-            <a class="top-links", href="http://www.goethelb.de">goethelb.de</a>
-        </td>
-        <td class="link-container">
-            <a class="top-links", href="http://www.zeit.de">zeit.de</a>
-        </td>
-        <td class="link-container">
-            <a class="top-links", href="https://www.bpb.de">bpb.de</a>
-        </td>
-        <td vertical-align="middle", width="25%" class="allcenter">
-            <input type="text" id="search" maxlength="30" placeholder="Datenbank durchsuchen">
-        </td>
-        <td width="5%" class="allcenter">
-            <a href="http://www.dohiy.com/wp-content/uploads/2014/06/itsatrap.jpg"><img id="search_icon" src="{% static "public/images/search_icon.png" %}" alt="search"></a>
-        </td>
-        </tr>
-    </table>
+    <form action="{% url "datenbank:index" %}" method="post">
+        {% csrf_token %}
+        <table class="table">
+            <tr>
+            <td id ="logotablerow", width="20%">
+                <img id="logo" src="{% static "public/images/apb_icon.png" %}" alt="logo">
+            </td>
+            <td class="link-container">
+                <a class="top-links", href="https://www.tagesschau.de">tagesschau.de</a>
+            </td>
+            <td class="link-container">
+                <a class="top-links", href="http://www.goethelb.de">goethelb.de</a>
+            </td>
+            <td class="link-container">
+                <a class="top-links", href="http://www.zeit.de">zeit.de</a>
+            </td>
+            <td class="link-container">
+                <a class="top-links", href="https://www.bpb.de">bpb.de</a>
+            </td>
+            <td vertical-align="middle", width="25%" class="allcenter">
+                <input type="text" id="search" name="query" maxlength="30" placeholder="Datenbank durchsuchen" value="{{ query }}">
+            </td>
+            <td width="5%" class="allcenter">
+                <input id="submit_search" type="submit" value="Suchen">
+            </td>
+            </tr>
+        </table>
+    </form>
     <div id="navigation">
     <ul class="navbar">
         <li class ="navbar"><a {% if appname == "startpage" %}class="active"{% endif %} href="/">Information</a></li>

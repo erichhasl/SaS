@@ -23,6 +23,16 @@ html {
     vertical-align: middle;
     padding-left: 0px;
 }
+#submit_search {
+    border: none;
+    background-color: transparent;
+    color: transparent;
+    background-image: url('../images/search_icon.png');
+    background-size: 100%;
+    background-position: center;
+    height: 64px;
+    background-repeat: no-repeat;
+}
 table{
     border-collapse: collapse;
     border: none;
