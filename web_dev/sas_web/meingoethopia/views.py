@@ -2,6 +2,7 @@ from django.shortcuts import render
 from django import forms
 from captcha.fields import CaptchaField
 from .models import Betrieb, Partei, PresidentCandidate, Question
+from .mailutils import send_from_arbeitsministerium
 
 
 class BetriebForm(forms.Form):
@@ -51,6 +52,10 @@ def betrieb_new(request):
                               ip_address=get_client_ip(request),
                               confirmed=False)
             betrieb.save()
+            send_from_arbeitsministerium(
+                'Anmeldung des Betriebs: {}'.format(betrieb.name),
+                MAIL_CONTENT_BETRIEB.format(name=betrieb.manager), [betrieb.email]
+            )
             return render_confirmation(request)
     else:
         form = BetriebForm()
@@ -118,3 +123,10 @@ def get_client_ip(request):
     else:
         ip = request.META.get('REMOTE_ADDR')
     return ip
+
+
+MAIL_CONTENT_BETRIEB = "Lieber {name},\nvielen Dank für die Anmeldung Deines" \
+    " Betriebes. Die Informationsveranstaltungen beginnen erst im Februar, deshalb\n" \
+    "wird sich das Arbeitsministerium dann erst mit Dir in Verbindung setzen.\n\n" \
+    "Viele Grüße,\n" \
+    "Organisation Goethopia"

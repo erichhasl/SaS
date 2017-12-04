@@ -13,6 +13,8 @@ https://docs.djangoproject.com/en/1.8/ref/settings/
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 import os
 
+deployed = '1' == os.environ.get('DJANGO_DEPLOY', '0')
+
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 
@@ -132,3 +134,15 @@ STATICFILES_DIRS = [
 
 STATIC_ROOT = os.environ.get('DJANGO_STATIC_ROOT',
                              os.path.join((os.path.join(BASE_DIR, os.pardir)), "static"))
+
+# Email setup
+
+EMAIL_HOST = os.environ.get('EMAIL_HOST', 'localhost')
+EMAIL_PORT = 587 if deployed else 25
+EMAIL_HOST_USER = os.environ.get('EMAIL_HOST_USER', '')
+EMAIL_HOST_PASSWORD = os.environ.get('EMAIL_HOST_PASSWORD', '')
+EMAIL_USE_TLS = True if deployed else False
+
+EMAIL_ARBEITSMINISTERIUM = os.environ.get('EMAIL_ARBEITSMINISTERIUM', '')
+EMAIL_ARBEITSMINISTERIUM_USER = os.environ.get('EMAIL_ARBEITSMINISTERIUM', '')
+EMAIL_ARBEITSMINISTERIUM_PASSWORD = os.environ.get('EMAIL_ARBEITSMINISTERIUM_PASSWORD', '')
