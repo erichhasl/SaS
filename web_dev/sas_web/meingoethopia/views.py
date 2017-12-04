@@ -128,5 +128,10 @@ def get_client_ip(request):
 MAIL_CONTENT_BETRIEB = "Lieber {name},\nvielen Dank für die Anmeldung Deines" \
     " Betriebes. Die Informationsveranstaltungen beginnen erst im Februar, deshalb\n" \
     "wird sich das Arbeitsministerium dann erst mit Dir in Verbindung setzen.\n\n" \
+    "Bei weiteren Fragen kannst du gerne info@goethopia.de anschreiben, oder \n" \ 
+    "uns direkt über arbeitsministerium@goethopia.de erreichen, wenn es um einen \n" \
+    "Betrieb geht. Darüber hinaus möchten wir dich darauf hinweisen, dass du Parteien, \n" \
+    "die mit deinen Interessen als Betriebsleiter übereinstimmen, natürlich tatkräftig \n" \
+    "unterstützen kannst in Form von Mitgliedschaft oder Unterstützung per Unterschrift.\n\n" \
     "Viele Grüße,\n" \
     "Organisation Goethopia"
