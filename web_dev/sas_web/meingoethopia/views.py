@@ -1,8 +1,9 @@
 from django.shortcuts import render
 from django import forms
+from django.conf import settings
 from captcha.fields import CaptchaField
 from .models import Betrieb, Partei, PresidentCandidate, Question
-from .mailutils import send_from_arbeitsministerium
+from .mailutils import send_from_arbeitsministerium, send_from_info
 
 
 class BetriebForm(forms.Form):
@@ -106,6 +107,8 @@ def question_new(request):
                                 ip_address=get_client_ip(request),
                                 answered=False)
             question.save()
+            send_from_info(question.subject, question.content,
+                           settings.EMAIL_INFO, reply_to=[question.email])
             return render_confirmation(request)
     else:
         form = QuestionForm()
