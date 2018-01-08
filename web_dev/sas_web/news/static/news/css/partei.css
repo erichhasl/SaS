@@ -1,7 +1,11 @@
 #partei_bild {
-    max-width: 50%;
     margin-top: 20px;
     margin-bottom: 50px;
+    width: 100%;
+}
+
+#tablebig {
+    width: 100%;
 }
 
 .trpartei {

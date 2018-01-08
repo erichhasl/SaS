@@ -7,47 +7,58 @@
 
 <p><a href="{% url "news:index" %}">Zurück zur Übersicht</a></p>
 
-<div style="width:100%;">
-    <img src="{{ entry.image.url }}" id="partei_bild">
-</div>
-
-<table class="tablepartei">
+<table id="tablebig">
     <tr>
-        <th style="width:20%"/>
-        <th style="width:80%"/>
+        <th style="width:70%"/>
+        <th style="width:30%"/>
     </tr>
-    <tr class="trpartei">
+    <tr>
         <td>
-            <p><b>Name</b></p>        
+            <table class="tablepartei">
+                <tr>
+                    <th style="width:20%"/>
+                    <th style="width:80%"/>
+                </tr>
+                <tr class="trpartei">
+                    <td>
+                        <p><b>Name</b></p>        
+                    </td>
+                    <td>
+                        <p>{{ entry.partei.name }} ({{ entry.partei.abbreviation }})</p>        
+                    </td>
+                </tr>
+                <tr class="trpartei">
+                    <td>
+                        <p><b>Vorsitzende(r)</b></p>        
+                    </td>
+                    <td>
+                        <p>{{ entry.partei.chef }}</p>        
+                    </td>
+                </tr>
+                <tr class="trpartei">
+                    <td>
+                        <p><b>Wahlprogramm</b></p>        
+                    </td>
+                    <td>
+                        <p>{{ entry.wahlprogramm|linebreaks }}</p>        
+                    </td>
+                </tr>
+                <tr class="trpartei">
+                    <td>
+                        <p><b>Weitere Informationen</b></p>        
+                    </td>
+                    <td>
+                        {% for attachment in entry.parteianhang_set.all %}
+                            <a href="{{ attachment.data.url }}">{{ attachment.name }}</a><br>
+                        {% endfor %}
+                    </td>
+                </tr>
+            </table>
         </td>
         <td>
-            <p>{{ entry.partei.name }} ({{ entry.partei.abbreviation }})</p>        
-        </td>
-    </tr>
-    <tr class="trpartei">
-        <td>
-            <p><b>Vorsitzende(r)</b></p>        
-        </td>
-        <td>
-            <p>{{ entry.partei.chef }}</p>        
-        </td>
-    </tr>
-    <tr class="trpartei">
-        <td>
-            <p><b>Wahlprogramm</b></p>        
-        </td>
-        <td>
-            <p>{{ entry.wahlprogramm|linebreaks }}</p>        
-        </td>
-    </tr>
-    <tr class="trpartei">
-        <td>
-            <p><b>Weitere Informationen</b></p>        
-        </td>
-        <td>
-            {% for attachment in entry.parteianhang_set.all %}
-                <a href="{{ attachment.data.url }}">{{ attachment.name }}</a><br>
-            {% endfor %}
+            <div>
+                <img src="{{ entry.image.url }}" id="partei_bild">
+            </div>
         </td>
     </tr>
 </table>
