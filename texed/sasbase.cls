@@ -260,3 +260,41 @@
 }
 {
 }
+
+% ----------
+% WIRTSCHAFT
+% ----------
+
+\newcounter{total}
+
+\newcolumntype{R}[1]{>{\raggedleft\arraybackslash}p{#1}}
+
+\newenvironment{kostenrechnung}[0]{
+    \setcounter{total}{0}
+    \begin{tabular}{p{2cm}p{4.5cm}p{8.5cm}R{2cm}}
+        \toprule
+        Posten & Berechnung & Kommentar & Kosten in €\\
+        \midrule
+}
+{
+        \bottomrule
+        Gesamt & & & \thetotal \\
+        \bottomrule
+    \end{tabular}
+}
+
+\newenvironment{lohnrechnung}[0]{
+    \setcounter{total}{0}
+    \begin{tabular}{p{8cm}p{3.5cm}p{3.5cm}R{2cm}}
+        \toprule
+        Stelle & Anzahl & Lohn pro Tag & Gesamt in €\\
+        \midrule
+}
+{
+        \bottomrule
+        Gesamt & & & \thetotal \\
+        \bottomrule
+    \end{tabular}
+}
+
+\newcommand{\posten}[4]{\addtocounter{total}{#4} #1 & #2 & \textit{#3} & { \raggedleft #4 } \\}
