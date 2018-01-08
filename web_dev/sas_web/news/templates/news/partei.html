@@ -1,0 +1,37 @@
+{% extends "public/default.html" %}
+{% load static %}
+
+{% block content %}
+
+<link rel="stylesheet" type="text/css" href="{% static "news/css/partei.css"%}">
+
+<img src="{{ entry.image.url }}" id="partei_bild">
+
+<table>
+    <tr>
+        <td>
+            <p>Name</p>        
+        </td>
+        <td>
+            <p>{{ entry.partei.name }} ({{ entry.partei.abbreviation }})</p>        
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <p>Vorsitzende(r)</p>        
+        </td>
+        <td>
+            <p>{{ entry.partei.chef }}</p>        
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <p>Wahlprogramm</p>        
+        </td>
+        <td>
+            <p>{{ entry.wahlprogramm }}</p>        
+        </td>
+    </tr>
+</table>
+
+{% endblock %}

@@ -1,0 +1,45 @@
+#news_html {
+    margin-left: 2%;
+    width: 96%;
+}
+.tablenews {
+    width: 100%;
+}
+.trnews {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.tdnews {
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+.thumbnail {
+    display: block;
+    margin: 0 auto;
+    width: 80%;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+div.polaroid {
+    border: 2px solid #e7e7e7;
+    width: 80%;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-bottom: 25px;
+}
+
+div.container {
+    text-align: center;
+    padding: 10px 20px;
+    font-family: Helvetica, serif;
+    font-size: 12px;
+}
+#description {
+    text-align: center;
+}
