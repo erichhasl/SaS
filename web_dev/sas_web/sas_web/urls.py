@@ -23,6 +23,9 @@ from .views import error_400, error_403, error_404, error_500
 urlpatterns = static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 
 urlpatterns += [
+    url(r'^news/', include('news.urls',
+                           namespace='news',
+                           app_name='news')),
     url(r'^meingoethopia/', include('meingoethopia.urls',
                                     namespace='meingoethopia',
                                     app_name='meingoethopia')),
