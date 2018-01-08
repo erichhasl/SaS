@@ -8,10 +8,8 @@
     width: 100%;
 }
 
-.trpartei {
-    line-height: 25px;
-}
-
-.tablepartei {
+#tablepartei {
+    border-collapse: separate;
     width: 100%;
+    border-spacing: 0 1em;
 }
