@@ -1,3 +1,13 @@
 #partei_bild {
-    max-width: 20%
+    max-width: 50%;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+.trpartei {
+    line-height: 25px;
+}
+
+.tablepartei {
+    width: 100%;
 }

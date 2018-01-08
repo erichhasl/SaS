@@ -6,10 +6,13 @@ from .models import ParteiWerbung, PraesidentWerbung
 
 # Create your views here.
 def index(request):
-    objects = ParteiWerbung.objects.all()
-    rows = group(objects, 3)
-    return render(request, "news/index.html", {'rows': rows,
-                                               })
+    partei_objs = ParteiWerbung.objects.all()
+    parteien = group(partei_objs, 3)
+
+    praesident_objs = PraesidentWerbung.objects.all()
+    praesidenten = group(praesident_objs, 3)
+    return render(request, "news/index.html",
+                  {'parteien': parteien, 'praesidenten': praesidenten})
 
 
 def partei(request, partei_id):

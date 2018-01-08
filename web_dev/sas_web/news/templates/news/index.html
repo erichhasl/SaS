@@ -13,13 +13,10 @@
         </tr>
         <tr class="trnews">
             <td class="tdnews" colspan="3">
-                <p id="description">
-                    Bald wird gewählt in Goethopia! Hier erfährst du welche Parteien zur Wahl stehen
-                    und wer als Präsidentin kandidiert!
-                </p>
+                <h3>Parteien</h3>
             </td>
         </tr>
-        {% if rows|length == 0 %}
+        {% if parteien|length == 0 %}
         <tr>
             <td class="tdnews" colspan="3">
                 <p id="description">
@@ -28,7 +25,7 @@
             </td>
         </tr>
         {% endif %}
-        {% for row in rows %}
+        {% for row in parteien %}
         <tr class="trnews">
             {% for entry in row %}
             <td class="tdnews" align="{% cycle "left" "center" "right" %}">
@@ -38,6 +35,47 @@
                     </a>
                     <div class="container">
                         <p>{{ entry.partei.name }}</p>
+                    </div>
+                </div> 
+            </td>
+            {% endfor %}
+        </tr>
+        {% endfor %}
+    </table>
+</div>
+
+<!-- PRÄSIDENT -->
+<div id="news_html">
+    <table class="tablenews">
+        <tr>
+            <th style="width:33%"/>
+            <th style="width:33%"/>
+            <th style="width:33%"/>
+        </tr>
+        <tr class="trnews">
+            <td class="tdnews" colspan="3">
+                <h3>Präsidentschaftskandidaten</h3>
+            </td>
+        </tr>
+        {% if praesidenten|length == 0 %}
+        <tr>
+            <td class="tdnews" colspan="3">
+                <p id="description">
+                    <b>Keine Präsidenten gefunden</b>
+                </p>
+            </td>
+        </tr>
+        {% endif %}
+        {% for row in praesidenten %}
+        <tr class="trnews">
+            {% for entry in row %}
+            <td class="tdnews" align="{% cycle "left" "center" "right" %}">
+                <div class="polaroid">
+                    <a class="thumbnail" href="{{ entry.url }}">
+                        <img src="{{ entry.image.url }}" alt="Verfassung">
+                    </a>
+                    <div class="container">
+                        <p>{{ entry.praesident.name }}</p>
                     </div>
                 </div> 
             </td>
