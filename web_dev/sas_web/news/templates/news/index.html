@@ -1,5 +1,49 @@
 {% extends "public/default.html" %}
+{% load static %}
 
 {% block content %}
-<p>Hi!</p>
+<p></p>
+<link rel="stylesheet" type="text/css" href="{% static "datenbank/css/index.css"%}">
+<div id="datenbank_html">
+    <table class="tabledatabase">
+        <tr>
+            <th style="width:33%"/>
+            <th style="width:33%"/>
+            <th style="width:33%"/>
+        </tr>
+        <tr class="trdatabase">
+            <td class="tddatabase" colspan="3">
+                <p id="description">
+                    Bald wird gewählt in Goethopia! Hier erfährst du welche Parteien zur Wahl stehen
+                    und wer als Präsidentin kandidiert!
+                </p>
+            </td>
+        </tr>
+        {% if rows|length == 0 %}
+        <tr>
+            <td class="tddatabase" colspan="3">
+                <p id="description">
+                    <b>Keine Parteien gefunden</b>
+                </p>
+            </td>
+        </tr>
+        {% endif %}
+        {% for row in rows %}
+        <tr class="trdatabase">
+            {% for entry in row %}
+            <td class="tddatabase" align="{% cycle "left" "center" "right" %}">
+                <div class="polaroid">
+                    <!--<a class="thumbnail" href="{{ entry.element.url }}">-->
+                        <!--<img src="{{ entry.image.url }}" alt="Verfassung">-->
+                    <!--</a>-->
+                    <div class="container">
+                        <p>{{ entry.partei.name }}</p>
+                    </div>
+                </div> 
+            </td>
+            {% endfor %}
+        </tr>
+        {% endfor %}
+    </table>
+</div>
 {% endblock %}
