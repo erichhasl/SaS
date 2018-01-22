@@ -1,0 +1,85 @@
+\documentclass[12pt]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[german]{babel}
+\usepackage{tikz}
+\usepackage{extsizes}
+\usepackage{geometry}
+
+\geometry{
+    margin=1.2cm
+}
+
+\newcommand{\kreis}{
+    $\vcenter{\begin{tikzpicture}
+        \draw (0,0) circle (0.2cm);
+    \end{tikzpicture}}$
+}
+
+\setlength{\parindent}{0cm}
+\pagenumbering{gobble}
+
+\begin{document}
+
+\textbf{\LARGE{Bewerbung als Beamter}}
+
+\vspace{0.5cm}
+
+Du möchtest du dich als Beamter in der Regierung oder als Richter bewerben? Dann fülle einfach
+diesen Zettel aus und gib den dann im Sekreteriat ab. Bitte erwähne in deiner Motivation weder
+deine Klasse noch deinen Namen.
+
+\renewcommand{\arraystretch}{1.5}
+
+\vspace{1cm}
+
+\begin{tabular}{p{4cm}p{14cm}}
+    Name: & \dotfill \\
+\end{tabular}
+
+\vspace{3mm}
+\begin{tabular}{p{4cm}p{14cm}}
+    Klasse: & \dotfill \\
+\end{tabular}
+
+\vspace{3mm}
+\begin{tabular}{p{4cm}p{14cm}}
+    Stelle: &
+    \begin{tabular}[t]{p{1cm}p{8cm}}
+        \kreis & Richter/-in \\
+        \kreis & Verfassungsrichter/-in \\
+        \kreis & Zollbeamter/-in (leider nur ab 16 Jahren) \\
+        \kreis & Polizist/-in\\
+        \kreis & Wirtschaftskontrolldienst \\
+        \kreis & Staatssekretär/-in \\
+    \end{tabular}
+    \\
+\end{tabular}
+
+\vspace{3mm}
+\begin{tabular}{p{4cm}p{14cm}}
+    Email: & \dotfill \\
+\end{tabular}
+
+\vspace{3mm}
+\begin{tabular}{p{4cm}p{14cm}}
+    Motivation: & \dotfill \\
+    & \dotfill \\
+    & \dotfill \\
+    & \dotfill \\
+    & \dotfill \\
+    & \dotfill \\
+    & \dotfill \\
+    & \dotfill \\
+    & \dotfill \\
+    & \dotfill \\
+    & \dotfill \\
+    & \dotfill \\
+    & \dotfill \\
+    & \dotfill \\
+    & \dotfill \\
+    & \dotfill \\
+    & \dotfill \\
+\end{tabular}
+
+\end{document}
