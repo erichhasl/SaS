@@ -3,41 +3,46 @@
 
 {% block content %}
 <link rel="stylesheet" type="text/css" href="{% static "news/css/index.css"%}">
-<div width="70%">
-<h1 class="red" id="ministerien">Das Wahlergebnis</h1>
-Die Bürger Goethopias haben gewählt. <b>David Schwarz</b> ist der neue Präsident und die <b>Liberalen Sozialdemokraten</b> werden die stärkste Partei im Parlament:
-<br>
 <table>
     <tr>
-        <td width="50%">
-            <center class="imagewrap">
-                <img src="{% static "news/images/Sitzverteilung.png" %}" alt="Wahlergebnis" class="images" width="40%">
-            </center>
-        </td>
-        <td width="50%">
-            <center class="imagewrap">
-                <img src="{% static "news/images/parliament.png" %}" alt="Sitverteilung" class="images" width="40%">
-            </center>
+        <td width="70%">
+            <h1 class="red" id="ministerien">Das Wahlergebnis</h1>
+            Die Bürger Goethopias haben gewählt. <b>David Schwarz</b> ist der neue Präsident und die <b>Liberalen Sozialdemokraten</b> werden die stärkste Partei im Parlament:
+            <br>
+            <table>
+                <tr>
+                    <td width="50%">
+                        <center class="imagewrap">
+                            <img src="{% static "news/images/Sitzverteilung.png" %}" alt="Wahlergebnis" class="images" width="40%">
+                        </center>
+                    </td>
+                    <td width="50%">
+                        <center class="imagewrap">
+                            <img src="{% static "news/images/parliament.png" %}" alt="Sitverteilung" class="images" width="40%">
+                        </center>
+                    </td>
+                </tr>
+            </table>
+            
+            <p class="paragraph">
+            <br>
+            Es ist nun am Parlament, eine Parlamentspräsidentin zu
+            bestimmen und eine mehrheitsfähige Regierungskoalition zu
+            bilden. In diesem Fall sind 16 Sitze benötigt, denkbar wären
+            also folgende Koalitionen:<br><br>
+                        - <b>LSD</b>, KKP, MIG (16 Sitze)<br>
+                        - <b>LSD</b>, KKP, PfG (16 Sitze)<br>
+                        - <b>LSD</b>, PfG, MIG (16 Sitze)<br>
+                        - <b>EAP</b>, KitKat, KKP, MIG (16 Sitze)<br>
+                        - <b>EAP</b>, KitKat KKP, PfG (16 Sitze)<br>
+                        - <b>EAP</b>, KitKat, PfG, MIG (16 Sitze)<br><br>
+            Das Parlament wählt nun eine Kanzlerin, welche wiederum
+            ihr Kabinett, bestehend aus den Ministerien, ernennt. Zu
+            den weiteren Aufgaben des Parlamentes gehört die Gesetzeserlassung
+            und Wahl der Richter.
+            <br>
         </td>
     </tr>
 </table>
 
-<p class="paragraph">
-<br>
-Es ist nun am Parlament, eine Parlamentspräsidentin zu
-bestimmen und eine mehrheitsfähige Regierungskoalition zu
-bilden. In diesem Fall sind 16 Sitze benötigt, denkbar wären
-also folgende Koalitionen:<br>
-            - <b>LSD</b>, KKP, MIG (16 Sitze)<br>
-            - <b>LSD</b>, KKP, PfG (16 Sitze)<br>
-            - <b>LSD</b>, PfG, MIG (16 Sitze)<br>
-            - <b>EAP</b>, KitKat, KKP, MIG (16 Sitze)<br>
-            - <b>EAP</b>, KitKat KKP, PfG (16 Sitze)<br>
-            - <b>EAP</b>, KitKat, PfG, MIG (16 Sitze)<br>
-Das Parlament wählt nun eine Kanzlerin, welche wiederum
-ihr Kabinett, bestehend aus den Ministerien, ernennt. Zu
-den weiteren Aufgaben des Parlamentes gehört die Gesetzeserlassung
-und Wahl der Richter.
-<br>
-</div>
 {% endblock %}
