@@ -3,13 +3,13 @@
 
 {% block content %}
 <link rel="stylesheet" type="text/css" href="{% static "news/css/index.css"%}">
-
+<div width="70%">
 <h1 class="red" id="ministerien">Das Wahlergebnis</h1>
 Die Bürger Goethopias haben gewählt. <b>David Schwarz</b> ist der neue Präsident und die <b>Liberalen Sozialdemokraten</b> werden die stärkste Partei im Parlament:
 <br>
 </p>
 <center class="imagewrap">
-    <img src="{% static "news/images/Sitzverteilung.png" %}" alt="Wahlergebnis" class="images">
+    <img src="{% static "news/images/Sitzverteilung.png" %}" alt="Wahlergebnis" class="images" width="40%">
 </center>
 <p class="paragraph">
 <br>
@@ -17,7 +17,7 @@ Hieraus ergibt sich nun folgende Sitzverteilung:
 <br>
 </p>
 <center class="imagewrap">
-    <img src="{% static "news/images/parliament.png" %}" alt="Sitverteilung" class="images">
+    <img src="{% static "news/images/parliament.png" %}" alt="Sitverteilung" class="images" width="40%">
 </center>
 <p class="paragraph">
 <br>
@@ -36,5 +36,5 @@ ihr Kabinett, bestehend aus den Ministerien, ernennt. Zu
 den weiteren Aufgaben des Parlamentes gehört die Gesetzeserlassung
 und Wahl der Richter.
 <br>
-
+</div>
 {% endblock %}
