@@ -22,5 +22,5 @@ class PraesidentWerbungAdmin(admin.ModelAdmin):
     list_display = ('praesident',)
     inlines = [PraesidentAnhangInline]
 
-# admin.site.register(ParteiWerbung, ParteiWerbungAdmin)
-# admin.site.register(PraesidentWerbung, PraesidentWerbungAdmin)
+admin.site.register(ParteiWerbung, ParteiWerbungAdmin)
+admin.site.register(PraesidentWerbung, PraesidentWerbungAdmin)
