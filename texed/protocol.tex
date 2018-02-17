@@ -5,48 +5,38 @@
 \usepackage{graphicx}
 \usepackage[ngerman]{babel}
 \usepackage{tikz}
-\usepackage{extsizes}
 \usepackage{geometry}
-
-\begin{document}
-
-\title{Protokoll}
-\place{Ludwigsburg}
-\datum{19. Februar 2018}
-\edition{1}
-\setcounter{secnumdepth}{5}
-\onecolumn
-\mytitle
-% OPTIONAL
-%\squarestyle
-% OR
-\parensstyle
-
-\vspace*{-5mm}
-\section{Vor der Sitzung}
-\vspace*{5mm}
-
-
-\geometry{
-    margin=1.2cm
-}
 
 \newcommand{\kreis}{
     $\vcenter{\begin{tikzpicture}
         \draw (0,0) circle (0.2cm);
     \end{tikzpicture}}$
 }
+\setlength{\parindent}{0mm}
+\setlength{\parskip}{2mm}
+
+\begin{document}
+
+\title{Protokoll}
+
+\place{Ludwigsburg}
+\datum{19. Februar 2018}
+\edition{1}
+\onecolumn
+\mytitle
+\parensstyle
+
+\section{Vor der Sitzung}
 
 \begin{tabular}{p{4cm}p{14cm}}
     Fehlende Abgeordnete: & \dotfill \\
 \end{tabular}
 
-\vspace{3mm}
 \begin{tabular}{p{4cm}p{14cm}}
     G\"{a}ste: &
     \begin{tabular}[t]{p{0.5cm}p{5cm}p{1cm}p{0.5cm}p{5cm}}
-        \kreis & Pr\"{a}sident & \kreis & Polizei-Chef \\
-        Sonstige: & \dotfill & \dotfill & \dotfill \\
+        \kreis & Pr\"{a}sident & & \kreis & Polizei-Chef \\[2mm]
+        \multicolumn{5}{l}{Sonstige: \hspace{5mm} \dotfill} \\
     \end{tabular}
     \\
 \end{tabular}
@@ -54,8 +44,8 @@
 \begin{tabular}{p{4cm}p{14cm}}
     Leitung durch: &
     \begin{tabular}[t]{p{0.5cm}p{5cm}p{1cm}p{0.5cm}p{5cm}}
-        \kreis & Pr\"{a}sident & \kreis & Parlamentspr\"{a}sident \\
-        Vertretung: & \dotfill & \dotfill & \dotfill \\
+        \kreis & Pr\"{a}sident & & \kreis & Parlamentspr\"{a}sident \\[2mm]
+        \multicolumn{5}{l}{Vertretung: \hspace{5mm} \dotfill} \\
     \end{tabular}
     \\
 \end{tabular}
@@ -64,7 +54,7 @@
 \begin{tabular}{p{4cm}p{14cm}}
     Beschlussf\"{a}higkeit: &
     \begin{tabular}[t]{p{0.5cm}p{5cm}p{1cm}p{0.5cm}p{5cm}}
-        \kreis & < 10 Abgeordnete & \kreis & \geq 10 Abgeordnete  \\
+        \kreis & < 10 Abgeordnete & & \kreis & $\geq$ 10 Abgeordnete  \\
     \end{tabular}
     \\
 \end{tabular}
@@ -73,7 +63,7 @@
 \begin{tabular}{p{4cm}p{14cm}}
     Anwesenheit juristischer Berater: &
     \begin{tabular}[t]{p{0.5cm}p{5cm}p{1cm}p{0.5cm}p{5cm}}
-        \kreis & Ja & \kreis & Nein  \\
+        \kreis & Ja & & \kreis & Nein  \\
     \end{tabular}
     \\
 \end{tabular}
@@ -82,70 +72,72 @@
     Sitzungser\"{o}ffnung um: & \dotfill \\
 \end{tabular}
 
-\vspace*{-5mm}
 \section{W\"{a}hrend der Sitzung}
-\vspace*{5mm}
 
-\vspace{3mm}
 \begin{tabular}{p{4cm}p{14cm}}
-    Beschlüsse: & \dotfill \\
-    & \dotfill \\
-    & \dotfill \\
-    & \dotfill \\
-    & \dotfill \\
-    & \dotfill \\
-    & \dotfill \\
-    & \dotfill \\
-    & \dotfill \\
-    & \dotfill \\
-    & \dotfill \\
-    & \dotfill \\
-    & \dotfill \\
-    & \dotfill \\
-    & \dotfill \\
-    & \dotfill \\
-    & \dotfill \\
+    Beschlüsse: & \dotfill \\[2mm]
+    & \dotfill \\[2mm]
+    & \dotfill \\[2mm]
+    & \dotfill \\[2mm]
+    & \dotfill \\[2mm]
+    & \dotfill \\[2mm]
+    & \dotfill \\[2mm]
+    & \dotfill \\[2mm]
+    & \dotfill \\[2mm]
+    & \dotfill \\[2mm]
+    & \dotfill \\[2mm]
+    & \dotfill \\[2mm]
+    & \dotfill \\[2mm]
+    & \dotfill \\[2mm]
 \end{tabular}
 
 \begin{tabular}{p{4cm}p{14cm}}
-    Reden: & \dotfill \\
-    & \dotfill \\
-    & \dotfill \\
-    & \dotfill \\
-    & \dotfill \\
-    & \dotfill \\
-    & \dotfill \\
-    & \dotfill \\
-    & \dotfill \\
-    & \dotfill \\
-    & \dotfill \\
-    & \dotfill \\
-    & \dotfill \\
-    & \dotfill \\
-    & \dotfill \\
-    & \dotfill \\
-    & \dotfill \\
+    & \dotfill \\[2mm]
+    & \dotfill \\[2mm]
+    & \dotfill \\[2mm]
+    & \dotfill \\[2mm]
+    & \dotfill \\[2mm]
+    & \dotfill \\[2mm]
+\end{tabular}
+
+\begin{tabular}{p{4cm}p{14cm}}
+    Reden: & \dotfill \\[2mm]
+    & \dotfill \\[2mm]
+    & \dotfill \\[2mm]
+    & \dotfill \\[2mm]
+    & \dotfill \\[2mm]
+    & \dotfill \\[2mm]
+    & \dotfill \\[2mm]
+    & \dotfill \\[2mm]
+    & \dotfill \\[2mm]
+    & \dotfill \\[2mm]
+    & \dotfill \\[2mm]
+    & \dotfill \\[2mm]
+    & \dotfill \\[2mm]
+    & \dotfill \\[2mm]
+    & \dotfill \\[2mm]
+    & \dotfill \\[2mm]
+    & \dotfill \\[2mm]
 \end{tabular}
 
 \vspace{3mm}
 \begin{tabular}{p{4cm}p{14cm}}
     R\"{u}gen: &
-    \begin{tabular}[t]{p{0.5cm}p{5cm}p{1cm}p{0.5cm}p{5cm}}
-        An & \dotfill & Grund & \dotfill  \\
-        An & \dotfill & Grund & \dotfill  \\
-        An & \dotfill & Grund & \dotfill  \\
-        An & \dotfill & Grund & \dotfill  \\
+    \begin{tabular}[t]{p{0.5cm}p{5cm}p{0.2cm}p{1cm}p{5.3cm}}
+        An & \dotfill & & Grund & \dotfill \\[2mm]
+        An & \dotfill & & Grund & \dotfill \\[2mm]
+        An & \dotfill & & Grund & \dotfill \\[2mm]
+        An & \dotfill & & Grund & \dotfill \\[2mm]
     \end{tabular}
     \\
 \end{tabular}
 
-\vspace*{-5mm}
 \section{Nach der Sitzung}
-\vspace*{5mm}
 
 \begin{tabular}{p{4cm}p{14cm}}
     Unterschrift Leitung: & \dotfill \\
 \end{tabular}
+\vspace*{1mm}
 
 \begin{tabular}{p{4cm}p{14cm}}
     Unterschrift Ger\"{u}gte: & \dotfill \\
