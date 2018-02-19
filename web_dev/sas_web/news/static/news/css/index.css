@@ -44,3 +44,7 @@ div.container {
 #description {
     text-align: center;
 }
+
+#kabinett tr>td {
+    padding-bottom: 15px;
+}
