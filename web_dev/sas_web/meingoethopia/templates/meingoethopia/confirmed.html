@@ -1,6 +1,11 @@
 {% extends "public/default.html" %}
 
 {% block content %}
-<p>Vielen Dank für deine Anmeldung! <a href="{% url "meingoethopia:index" %}">Hier</a>
-kommst du zurück zur Übersicht.</p>
+<p>
+    Vielen Dank <b>{{ betrieb.manager }}</b>.
+    Dein Betrieb <b>{{ betrieb.name }}</b> wurde erfolgreich angemeldet.
+</p>
+<p>
+    <a href="{% url "meingoethopia:index" %}">Hier</a> kommst du zurück zur Übersicht.
+</p>
 {% endblock %}

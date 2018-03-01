@@ -1,7 +1,16 @@
 {% extends "public/default.html" %}
 
 {% block content %}
-<p>Hier kannst Du einen Betrieb anmelden!</p>
+
+<h3>Kriterien für die Betriebsgründung</h3>
+
+<ul>
+    <li>Die Betriebsgründung erfolgt <b>alleine</b> oder <b>zu zweit</b>.</li>
+    <li>Der Betrieb muss <b>mindestens</b> zwei Angestellte pro Schicht beschäftigen.</li>
+    <li>Betriebsgründer aus den Klassen <b>Fünf bis Acht</b> benötigen eine/n Lehrer/in,
+    welche/r die Aufsicht übernimmt.</li>
+    <li>Wir behalten uns vor, Betriebe mit gleicher Idee zusammenzulegen.</li>
+</ul>
 
 <form action="" method="post">
     {% csrf_token %}

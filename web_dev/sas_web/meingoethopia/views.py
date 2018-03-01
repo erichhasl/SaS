@@ -57,7 +57,8 @@ def betrieb_new(request):
                 'Anmeldung des Betriebs: {}'.format(betrieb.name),
                 MAIL_CONTENT_BETRIEB.format(name=betrieb.manager), [betrieb.email]
             )
-            return render_confirmation(request)
+            return render(request, 'meingoethopia/confirmed.html',
+                          {'betrieb': betrieb})
     else:
         form = BetriebForm()
     return render(request, "meingoethopia/betrieb_new.html", {'form': form})
