@@ -79,7 +79,7 @@ class Parlamentssitzung(models.Model):
     date = models.DateField('Datum')
     stunde = models.CharField('Stunde', max_length=15)
     raum = models.CharField('Raum', max_length=10)
-    tagesordnung = models.FileField('Tagesordnung', default=None)
+    tagesordnung = models.FileField('Tagesordnung', default=None, blank=True)
     kind = models.ForeignKey(SitzungsKind, verbose_name='Sitzungsart')
 
     @property
