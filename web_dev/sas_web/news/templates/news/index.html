@@ -6,6 +6,19 @@
 <table>
     <tr>
         <td width="70%">
+            <h1 class="red">Parlamentssitzungen</h1>
+
+            <p>Hier sind die nächsten Parlamentssitzungen, falls bereits geplant, zu sehen.</p>
+            <ul>
+                {% for session in sessions %}
+                <li>
+                    {{ session.date }}, {{ session.stunde }}, {{ session.raum }}
+                    {% if session.tagesordnung %}
+                    (<a href="{{ session.tagesordnung.url }}">Tagesordnung</a>)
+                    {% endif %}
+                </li>
+                {% endfor %}
+            </ul>
             <h1 class="red">Kabinett</h1>                        
             <p>Das Kabinett setzt sich folgendermaßen zusammen:</p>
             <table id="kabinett">

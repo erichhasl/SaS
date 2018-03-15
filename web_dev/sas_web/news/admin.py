@@ -1,6 +1,6 @@
 from django.contrib import admin
 from .models import ParteiWerbung, PraesidentWerbung, ParteiAnhang, \
-    PraesidentAnhang
+    PraesidentAnhang, Parlamentssitzung, SitzungsKind
 
 
 class ParteiAnhangInline(admin.TabularInline):
@@ -22,5 +22,15 @@ class PraesidentWerbungAdmin(admin.ModelAdmin):
     list_display = ('praesident',)
     inlines = [PraesidentAnhangInline]
 
+
+class ParlamentssitzungAdmin(admin.ModelAdmin):
+    list_display = ('date', 'stunde', 'raum', 'kind')
+
+
+class SitzungsKindAdmin(admin.ModelAdmin):
+    list_display = ('name',)
+
 admin.site.register(ParteiWerbung, ParteiWerbungAdmin)
 admin.site.register(PraesidentWerbung, PraesidentWerbungAdmin)
+admin.site.register(Parlamentssitzung, ParlamentssitzungAdmin)
+admin.site.register(SitzungsKind, SitzungsKindAdmin)

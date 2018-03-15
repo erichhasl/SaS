@@ -60,3 +60,30 @@ class PraesidentAnhang(models.Model):
     class Meta:
         verbose_name = 'Anhang'
         verbose_name_plural = 'Anhänge'
+
+
+class SitzungsKind(models.Model):
+
+    name = models.TextField('Name')
+
+    def __str__(self):
+        return self.name
+
+    class Meta:
+        verbose_name = 'Sitzungsart'
+        verbose_name_plural = 'Sitzungsarten'
+
+
+class Parlamentssitzung(models.Model):
+    date = models.DateField('Datum')
+    stunde = models.CharField('Stunde', max_length=15)
+    raum = models.CharField('Raum', max_length=10)
+    tagesordnung = models.FileField('Tagesordnung', default=None)
+    kind = models.ForeignKey(SitzungsKind, verbose_name='Sitzungsart')
+
+    def __str__(self):
+        return str(self.kind) + " " + str(self.date)
+
+    class Meta:
+        verbose_name = 'Parlamentssitzung'
+        verbose_name_plural = 'Parlamentssitzungen'
