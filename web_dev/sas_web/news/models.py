@@ -1,4 +1,5 @@
 from django.db import models
+from datetime import date
 
 
 # Create your models here.
@@ -80,6 +81,10 @@ class Parlamentssitzung(models.Model):
     raum = models.CharField('Raum', max_length=10)
     tagesordnung = models.FileField('Tagesordnung', default=None)
     kind = models.ForeignKey(SitzungsKind, verbose_name='Sitzungsart')
+
+    @property
+    def passed(self):
+        return date.today() > self.date
 
     def __str__(self):
         return str(self.kind) + " " + str(self.date)

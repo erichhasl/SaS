@@ -11,12 +11,14 @@
             <p>Hier sind die nächsten Parlamentssitzungen, falls bereits geplant, zu sehen.</p>
             <ul>
                 {% for session in sessions %}
+                {% if not session.passed %}
                 <li>
                     {{ session.date }}, {{ session.stunde }}, {{ session.raum }}
                     {% if session.tagesordnung %}
                     (<a href="{{ session.tagesordnung.url }}">Tagesordnung</a>)
                     {% endif %}
                 </li>
+                {% endif %}
                 {% endfor %}
             </ul>
             <h1 class="red">Kabinett</h1>                        
