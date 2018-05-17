@@ -19,6 +19,10 @@ from django.conf import settings
 
 from .views import error_400, error_403, error_404, error_500
 
+admin.site.site_header = "Goethopia"
+admin.site.site_title = "Goethopia"
+admin.site.index_title = "Verwaltung"
+
 urlpatterns = static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 
 urlpatterns += [

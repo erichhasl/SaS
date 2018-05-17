@@ -1,0 +1,36 @@
+{% extends "admin/base_site.html" %}
+
+{% block content %}
+
+<h2>Arbeitnehmer</h2>
+
+<p>Insgesamt sind {{ arbeitnehmer_gesamt }} Schüler durch {{ betriebe.count }} Betriebe versorgt.</p>
+
+<h2>Räume</h2>
+
+<table>
+    <tr>
+        <th>Raumnummer</th>
+        <th>Anzahl an Betrieben</th>
+        <th>Theoretische Belegung</th>
+    </tr>
+    {% for raum, data in raummap.items %}
+    <tr>
+        <td>{{ raum }}</td>
+        <td>{{ data|get_item:"anzahl" }}</td>
+        
+        <td>
+            <font {% if data|get_item:"belegung" > 1 %} color="red"{% endif %}>
+                {{ data|get_item:"belegung" }}
+            </font>
+        </td>
+    </tr>
+    {% endfor %}
+</table>
+
+<form action="" method="post">
+	{% csrf_token %}
+	<input type="submit" value="Zurück">
+</form>
+
+{% endblock %}
