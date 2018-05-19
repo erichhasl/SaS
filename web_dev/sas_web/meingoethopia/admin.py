@@ -36,7 +36,8 @@ def create_overview(modeladmin, request, queryset):
                    'arbeitnehmer_gesamt': sum([b.arbeitnehmerzahl for b in
                                                queryset]),
                    'raummap': raummap,
-                   'title': "Betriebsübersicht"}
+                   'title': "Betriebsübersicht",
+                   'kreditgesamt': sum([b.kredit for b in queryset])}
         return render(request, 'meingoethopia/betriebe_overview.html', context)
 
 create_overview.short_description = "Übersicht erstellen"

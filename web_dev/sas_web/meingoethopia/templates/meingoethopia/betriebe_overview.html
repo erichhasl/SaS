@@ -28,6 +28,10 @@
     {% endfor %}
 </table>
 
+<h2>Kredite</h2>
+
+<p>Insgesamt wird eine Kreditsumme von {{ kreditgesamt }}€ gewünscht.</p>
+
 <form action="" method="post">
 	{% csrf_token %}
 	<input type="submit" value="Zurück">
