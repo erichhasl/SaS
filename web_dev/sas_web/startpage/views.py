@@ -12,3 +12,7 @@ def impressum(request):
 
 def banned(request):
     return render(request, 'startpage/bann.html')
+
+
+def datenschutz(request):
+    return render(request, 'startpage/datenschutz.html')
