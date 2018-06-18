@@ -1,0 +1,96 @@
+\documentclass[12pt]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[german]{babel}
+\usepackage{tikz}
+\usepackage{extsizes}
+\usepackage{geometry}
+\usepackage{booktabs}
+\usepackage{eurosym}
+
+\geometry{
+    margin=1.2cm
+}
+
+\newcommand{\kreis}{
+    $\vcenter{\begin{tikzpicture}
+        \draw (0,0) circle (0.2cm);
+    \end{tikzpicture}}$
+}
+
+\setlength{\parindent}{0cm}
+\pagenumbering{gobble}
+
+\begin{document}
+
+\textbf{\LARGE{Wirtschaftsplan}}
+
+\vspace{0.5cm}
+
+Bitte trage alle bis jetzt absehbaren oder geplanten Ausgaben und Einnahmen ein und erkläre
+wenn nötig. Alle Mitarbeiter müssen mit mindestens 1,5 \euro{} pro Stunde entlohnt werden!
+
+\renewcommand{\arraystretch}{1.5}
+
+\vspace{0.7cm}
+
+\begin{tabular}{p{4cm}p{14cm}}
+    Name des Betriebs: & \dotfill \\
+\end{tabular}
+
+\vspace{3mm}
+\begin{tabular}{p{4cm}p{14cm}}
+    Email: & \dotfill \\
+\end{tabular}
+
+\vspace{3mm}
+\begin{tabular}{p{4cm}p{14cm}}
+    \textbf{Ausgaben} & \\[2mm]
+    \begin{tabular}{|p{.2\textwidth}|p{.5\textwidth}|p{.15\textwidth}|}
+        \hline
+        \textbf{Ausgabe} & \textbf{Erklärung} & \textbf{Kosten (\euro)} \\ \hline
+        & & \\ \hline
+        & & \\ \hline
+        & & \\ \hline
+        & & \\ \hline
+        & & \\ \hline
+        & & \\ \hline
+        & & \\ \hline
+        & & \\ \hline
+        & & \\ \hline
+        & & \\ \hline
+        & & \\ \hline
+        & & \\ \hline
+        & & \\ \hline
+        & & \\ \hline
+    \end{tabular} & \\
+\end{tabular}
+
+\vspace{0.4cm}
+
+\begin{tabular}{p{4cm}p{14cm}}
+    \textbf{Einnahmen} & \\[2mm]
+    \begin{tabular}{|p{.2\textwidth}|p{.5\textwidth}|p{.15\textwidth}|}
+        \hline
+        \textbf{Einnahme} & \textbf{Erklärung} & \textbf{Kosten (\euro)} \\ \hline
+        & & \\ \hline
+        & & \\ \hline
+        & & \\ \hline
+    \end{tabular} & \\
+\end{tabular}
+
+\vspace{0.7cm}
+
+Damit ihr nicht eure gesamten Ausgaben vorschießen müsst, könnt ihr einen Kredit beantragen, der
+euch am Vorbereitungstag gegen Vorlage der entsprechenden Belege ausgezahlt wird.
+
+\vspace{3mm}
+\begin{tabular}{p{4cm}p{14cm}}
+    \textbf{Kreditwunsch (\euro)} &
+    \begin{tabular}{|p{.3\textwidth}|}
+        \hline
+        \\ \hline
+    \end{tabular} \\
+\end{tabular}
+
+\end{document}
