@@ -1,0 +1,76 @@
+\documentclass[12pt]{article}
+
+\usepackage{geometry}
+\usepackage{tikz}
+\usepackage{xcolor}
+
+\definecolor{orange}{HTML}{FFEACB}
+
+\def\dotfill#1{\cleaders\hbox to #1{.}\hfill}
+\newcommand\dotline[2][.5em]{\leavevmode\hbox to #2{\dotfill{#1}\hfil}}
+
+\geometry{
+    paperwidth=7.6cm,
+    paperheight=10.7cm,
+    landscape,
+    left=5mm,
+    top=2mm,
+    right=5mm,
+    bottom=5mm
+}
+
+\pagenumbering{gobble}
+
+
+\begin{document}
+
+\pagecolor{orange}
+
+\tikz[remember picture,overlay] \node[opacity=1,inner sep=0pt] at (1.4, -1.6){
+    \includegraphics[height=.6\paperheight]{flagge.jpg}
+};
+
+\tikz[remember picture,overlay] \node[opacity=1,inner sep=0pt,anchor=west] at (5.3, -0.1){
+    ID: \dotline{2.5cm}
+};
+
+\tikz[remember picture,overlay] \node[opacity=1,inner sep=0pt] at (7.1, -2.4){
+    \tikz{\draw (0,0) rectangle (35mm, 45mm)}
+};
+
+%\begin{minipage}[t]{0.7\textwidth}
+%\vspace{0pt}
+
+%\end{minipage}
+%\begin{minipage}[t]{0.3\textwidth}
+%\vspace{0pt}
+%\includegraphics[height=1.5cm]{wappen.jpg}
+%\end{minipage}
+
+\vspace{14mm}
+
+\begin{minipage}[t]{0.55\textwidth}
+
+\vspace{2mm}
+
+\tiny{Name}
+
+\vspace{4mm}
+\dotline{4cm}
+\vspace{2mm}
+
+\tiny{Klasse}
+
+\vspace{4mm}
+\dotline{4cm}
+\vspace{2mm}
+
+\tiny{Unterschrift}
+
+\vspace{4mm}
+\dotline{4cm}
+\vspace{2mm}
+
+\end{minipage}
+
+\end{document}
