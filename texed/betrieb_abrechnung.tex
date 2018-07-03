@@ -1,0 +1,96 @@
+\documentclass[12pt]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[german]{babel}
+\usepackage{tikz}
+\usepackage{extsizes}
+\usepackage{geometry}
+\usepackage{booktabs}
+\usepackage{eurosym}
+
+\geometry{
+    margin=1.2cm
+}
+
+\newcommand{\kreis}{
+    $\vcenter{\begin{tikzpicture}
+        \draw (0,0) circle (0.2cm);
+    \end{tikzpicture}}$
+}
+
+\setlength{\parindent}{0cm}
+\pagenumbering{gobble}
+
+\begin{document}
+
+\textbf{\LARGE{Betrieb Abrechnung}}
+
+\vspace{5mm}
+
+Diese Abrechnung muss am Ende jedes Tages dem Wirtschaftsministerium vorgelegt werden, um
+die Abrechnung prüfen zu lassen und die Steuern zu begleichen. 
+
+\textbf{Wenn die Steuern am nächsten Tag noch nicht bezahlt sind, wird eine Geldstrafe erhoben!}
+
+\renewcommand{\arraystretch}{1.5}
+
+\vspace{0.7cm}
+
+\begin{tabular}{p{4cm}p{14cm}}
+    Name des Betriebs: & \dotfill \\
+\end{tabular}
+
+\vspace{3mm}
+\begin{tabular}{p{4cm}p{14cm}}
+    Email: & \dotfill \\
+\end{tabular}
+
+\vspace{3mm}
+\begin{tabular}{p{4.5cm}p{4.5cm}p{3cm}p{2cm}}
+    \textbf{Ausgezahlter Kredit:} &
+    \begin{tabular}{|p{3.5cm}|}
+        \hline
+        \\ \hline
+    \end{tabular} &
+    \textbf{Abbezahlt:} &
+    \begin{tabular}{|p{.6cm}|}
+        \hline
+        \\ \hline
+    \end{tabular} \\
+\end{tabular}
+
+
+\vspace{5mm}
+\begin{tabular}{p{4cm}p{14cm}}
+    \textbf{Ausgaben} & Alle Angaben in G-Mark\\[2mm]
+    \begin{tabular}{|p{.12\textwidth}|p{.12\textwidth}|p{.12\textwidth}|p{.12\textwidth}|p{.12\textwidth}|p{.12\textwidth}|p{.12\textwidth}|}
+        \hline
+        \textbf{Datum} & \textbf{Umsatz} & \textbf{Lohnkosten} & \textbf{Ausgaben} &
+        \textbf{Gewinn} & \textbf{Steuer} & \textbf{Erledigt}\\ \hline
+        & & & & & & \\ \hline
+        & & & & & & \\ \hline
+        & & & & & & \\ \hline
+        & & & & & & \\ \hline
+        & & & & & & \\ \hline
+    \end{tabular} & \\
+\end{tabular}
+
+\vspace{3mm}
+\begin{tabular}{p{18cm}p{4cm}}
+    \textbf{Anmerkungen des Wirtschaftskontrolldiensts} & \\[2mm]
+    \begin{tabular}{p{18cm}}
+        \dotfill \\
+        \dotfill \\
+        \dotfill \\
+        \dotfill \\
+        \dotfill \\
+        \dotfill \\
+    \end{tabular} & \\
+\end{tabular}
+
+\vspace{10mm}
+\textbf{Dieses Blatt gut aufbewahren! Bei Verlust dieser Abrechnung wird der Betrieb aufgelöst!}
+
+\vspace{0.4cm}
+
+\end{document}
