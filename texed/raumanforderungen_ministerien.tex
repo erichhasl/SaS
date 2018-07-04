@@ -1,0 +1,52 @@
+\documentclass[12pt]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[german]{babel}
+\usepackage{tikz}
+\usepackage{extsizes}
+\usepackage{geometry}
+\usepackage{booktabs}
+\usepackage{eurosym}
+
+\geometry{
+    margin=1.2cm
+}
+
+\newcommand{\kreis}{
+    $\vcenter{\begin{tikzpicture}
+        \draw (0,0) circle (0.2cm);
+    \end{tikzpicture}}$
+}
+
+\setlength{\parindent}{0cm}
+\pagenumbering{gobble}
+
+\begin{document}
+
+\textbf{\LARGE{Raumforderungen der Ministerien / Staatsbetriebe}}
+
+\renewcommand{\arraystretch}{1.5}
+
+\vspace{5mm}
+\begin{tabular}{p{4cm}p{14cm}}
+    \begin{tabular}{|p{.25\textwidth}|p{.5\textwidth}|p{.15\textwidth}|}
+        \hline
+        \textbf{Ministerium} & \textbf{Bedürfnisse} & \textbf{Raumwunsch} \\ \hline
+        Wirtschaftsministerium & Leicht zugänglich, genug Platz für Warteschlange und Tische
+        zum Abarbeiten & Aufenthaltsraum \\ \hline
+        Parlament & Genug Platz für 32 Tische in leichter Rundung, Beamer & 302 \\ \hline
+        & & \\ \hline
+        & & \\ \hline
+        & & \\ \hline
+        & & \\ \hline
+        & & \\ \hline
+        & & \\ \hline
+        & & \\ \hline
+        & & \\ \hline
+        & & \\ \hline
+        & & \\ \hline
+        & & \\ \hline
+        & & \\ \hline
+    \end{tabular} & \\
+\end{tabular}
+\end{document}
