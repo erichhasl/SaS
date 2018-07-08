@@ -1,9 +1,52 @@
 from django.contrib import admin
-from .models import Betrieb, Partei, PresidentCandidate, Question
+from .models import Betrieb, Partei, PresidentCandidate, Question, Angestellter
 from startpage.models import Banned
 from django.contrib.admin import helpers
 from django.shortcuts import render
 from django.template.defaulttags import register
+from django.db import models
+from django import forms
+
+
+class ZugeteiltFilter(admin.SimpleListFilter):
+    title = 'Zugeteilt'
+    parameter_name = 'zugeteilt'
+    default_value = ('Alle', None)
+
+    def lookups(self, request, model_admin):
+        return (
+            ('Alle', 'Alle'),
+            ('True', 'Zugeteilt'),
+            ('False', 'Nicht zugeteilt'),
+        )
+
+    def queryset(self, request, queryset):
+        if self.value() == 'True':
+            print("filter auf true")
+            return queryset.filter(betriebe__gt=0)
+        elif self.value() == 'False':
+            print("filter auf false")
+            return queryset.filter(betriebe__exact=None)
+        elif self.value() is None:
+            if self.default_value[1] is None:
+                return queryset
+            else:
+                return [x for x in queryset if x.zugeteilt() == self.default_value[1]]
+        elif self.value() == 'All':
+            return queryset
+
+    def choices(self, cl):
+        for lookup, title in self.lookup_choices:
+            yield {
+                'selected':
+                    self.value() == lookup or
+                    (self.value() is None and lookup == self.default_value[0]),
+                'query_string': cl.get_query_string({
+                                    self.parameter_name:
+                                    lookup,
+                                }, []),
+                'display': title
+            }
 
 
 @register.filter
@@ -46,11 +89,15 @@ create_overview.short_description = "Übersicht erstellen"
 # Register your models here.
 class BetriebAdmin(admin.ModelAdmin):
     list_display = ('name', 'manager', 'aufsicht', 'raum',
-                    'arbeitnehmerzahl_kurz', 'confirmed',
+                    'arbeitnehmerzahl_kurz', 'punkt',
                     'approved')
     list_filter = ('confirmed', 'approved', 'raum')
     search_fields = ('name', 'manager', 'raum', 'aufsicht')
+    formfield_overrides = {
+        models.ManyToManyField: {'widget': forms.CheckboxSelectMultiple},
+    }
     actions = [ban_ip, create_overview]
+    filter_horizontal = ('angestellte',)
 
 
 class ParteiAdmin(admin.ModelAdmin):
@@ -71,7 +118,13 @@ class QuestionAdmin(admin.ModelAdmin):
     list_filter = ('answered',)
     actions = [ban_ip]
 
+
+class AngestellterAdmin(admin.ModelAdmin):
+    list_display = ('name', 'klasse', 'is_teacher', 'show_betriebe', 'zugeteilt')
+    list_filter = (ZugeteiltFilter,)
+
 admin.site.register(Betrieb, BetriebAdmin)
 admin.site.register(Partei, ParteiAdmin)
 admin.site.register(PresidentCandidate, PresidentAdmin)
 admin.site.register(Question, QuestionAdmin)
+admin.site.register(Angestellter, AngestellterAdmin)
