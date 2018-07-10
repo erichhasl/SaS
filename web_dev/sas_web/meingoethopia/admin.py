@@ -89,7 +89,7 @@ create_overview.short_description = "Übersicht erstellen"
 # Register your models here.
 class BetriebAdmin(admin.ModelAdmin):
     list_display = ('name', 'manager', 'aufsicht', 'raum',
-                    'arbeitnehmerzahl_kurz', 'punkt',
+                    'arbeiter_effektiv', 'punkt',
                     'approved')
     list_filter = ('confirmed', 'approved', 'raum')
     search_fields = ('name', 'manager', 'raum', 'aufsicht')
