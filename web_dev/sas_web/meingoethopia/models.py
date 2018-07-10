@@ -66,6 +66,11 @@ class Betrieb(models.Model):
             return 1
     punkt.short_description = 'Punkt'
 
+    def arbeiter_effektiv(self):
+        return "{}/{}".format(self.angestellte.all().count(),
+                              self.arbeitnehmerzahl)
+    arbeiter_effektiv.short_description = 'Stellen'
+
     def __str__(self):
         return str(self.name)
 
