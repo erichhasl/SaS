@@ -18,7 +18,7 @@ class Angestellter(models.Model):
     zugeteilt.boolean = True
 
     def ist_klein(self):
-        return self.klasse[0] in ['5', '6', '7']
+        return self.klasse[0] in ['I', '5', '6', '7']
     ist_klein.boolean = True
 
     class Meta:
