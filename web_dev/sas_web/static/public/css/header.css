@@ -1,6 +1,10 @@
 html {
     background-color: white;
 }
+img {
+    max-width: 100%;
+    height: auto;
+}
 #logo {
     width: 90%;
     padding-left: 2%;
