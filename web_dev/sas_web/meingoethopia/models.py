@@ -10,7 +10,7 @@ class Angestellter(models.Model):
         return "{} ({})".format(self.name, self.klasse)
 
     def show_betriebe(self):
-        return ",".join([str(b) for b in self.betriebe.all()])
+        return ", ".join([str(b) for b in self.betriebe.all()])
     show_betriebe.short_description = "Betriebe"
 
     def zugeteilt(self):

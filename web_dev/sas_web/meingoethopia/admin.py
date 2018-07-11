@@ -17,21 +17,19 @@ class ZugeteiltFilter(admin.SimpleListFilter):
         return (
             ('Alle', 'Alle'),
             ('True', 'Zugeteilt'),
+            # ('More', 'Mehrfach zugeteilt'),
             ('False', 'Nicht zugeteilt'),
         )
 
     def queryset(self, request, queryset):
         if self.value() == 'True':
             print("filter auf true")
-            return queryset.filter(betriebe__gt=0)
+            return queryset.filter(betriebe__gt=0).distinct()
         elif self.value() == 'False':
             print("filter auf false")
-            return queryset.filter(betriebe__exact=None)
+            return queryset.filter(betriebe__exact=None).distinct()
         elif self.value() is None:
-            if self.default_value[1] is None:
-                return queryset
-            else:
-                return [x for x in queryset if x.zugeteilt() == self.default_value[1]]
+            return queryset
         elif self.value() == 'All':
             return queryset
 
@@ -122,6 +120,7 @@ class QuestionAdmin(admin.ModelAdmin):
 class AngestellterAdmin(admin.ModelAdmin):
     list_display = ('name', 'klasse', 'is_teacher', 'show_betriebe', 'zugeteilt')
     list_filter = (ZugeteiltFilter,)
+    search_fields = ('name', 'klasse')
 
 admin.site.register(Betrieb, BetriebAdmin)
 admin.site.register(Partei, ParteiAdmin)
