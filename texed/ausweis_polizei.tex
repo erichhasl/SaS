@@ -1,0 +1,68 @@
+\documentclass[12pt]{article}
+
+\usepackage{geometry}
+\usepackage{tikz}
+\usepackage{xcolor}
+\usepackage{mathptmx}
+\usepackage{anyfontsize}
+\usepackage{t1enc}
+
+\definecolor{orange}{HTML}{FFEACB}
+
+\def\dotfill#1{\cleaders\hbox to #1{.}\hfill}
+\newcommand\dotline[2][.5em]{\leavevmode\hbox to #2{\dotfill{#1}\hfil}}
+
+\geometry{
+    landscape,
+    left=15mm,
+    top=2mm,
+    right=5mm,
+    bottom=5mm
+}
+
+\pagenumbering{gobble}
+
+\begin{document}
+
+\tikz[remember picture,overlay] \node[opacity=1,inner sep=0pt] at (3, -4.8){
+    \includegraphics[height=.5\paperheight]{wappen.jpg}
+};
+
+\tikz[remember picture,overlay] \node[opacity=1,inner sep=0pt,anchor=west] at (8, -4.2){
+    \fontsize{45}{50}\selectfont Ausweis
+};
+
+\tikz[remember picture,overlay] \node[opacity=1,inner sep=0pt,anchor=west] at (8, -5.2){
+    \fontsize{45}{50}\selectfont Polizei
+};
+
+%\begin{minipage}[t]{0.7\textwidth}
+%\vspace{0pt}
+
+%\end{minipage}
+%\begin{minipage}[t]{0.3\textwidth}
+%\vspace{0pt}
+%\includegraphics[height=1.5cm]{wappen.jpg}
+%\end{minipage}
+
+\vspace{9cm}
+
+\LARGE{Name}
+
+\vspace{10mm}
+\dotline{15cm}
+\vspace{2mm}
+
+\LARGE{Schicht}
+
+\vspace{10mm}
+\dotline{15cm}
+\vspace{2mm}
+
+\LARGE{Unterschrift Polizeichef}
+
+\vspace{10mm}
+\dotline{15cm}
+\vspace{5mm}
+
+\end{document}

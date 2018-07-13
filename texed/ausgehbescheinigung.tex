@@ -1,0 +1,79 @@
+\documentclass[12pt]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[german]{babel}
+\usepackage{tikz}
+\usepackage{extsizes}
+\usepackage{geometry}
+\usepackage{booktabs}
+\usepackage{eurosym}
+
+\geometry{
+    margin=1.2cm
+}
+
+\newcommand{\kreis}{
+    $\vcenter{\begin{tikzpicture}
+        \draw (0,0) circle (0.2cm);
+    \end{tikzpicture}}$
+}
+
+\setlength{\parindent}{0cm}
+\pagenumbering{gobble}
+
+\begin{document}
+
+\textbf{\LARGE{Ausreisebescheinigung}}
+
+\vspace{0.5cm}
+
+Die folgende Ausreisebescheinigung erlaubt das Verlassen des Staatsgebiets für einen
+eingeschränkten Zeitraum. Bei Zuwiderhandlung gegen die Rahmenbedingungen des Auslandsaufenthalts
+wird ein Verfahren wegen Hochverrat erhoben.
+
+\renewcommand{\arraystretch}{1.5}
+
+\vspace{0.7cm}
+
+\begin{tabular}{p{5cm}p{13cm}}
+    Name der Ausreisenden: & \dotfill \\
+\end{tabular}
+
+\vspace{3mm}
+\begin{tabular}{p{5cm}p{13cm}}
+    Zeitraum: & \dotfill \\
+\end{tabular}
+
+\vspace{3mm}
+\begin{tabular}{p{5cm}p{13cm}}
+    Begründung: & \dotfill \\
+    & \dotfill \\
+    & \dotfill \\
+    & \dotfill \\
+    & \dotfill \\
+    & \dotfill \\
+\end{tabular}
+
+\vspace{3mm}
+\begin{tabular}{p{5cm}p{13cm}}
+    Besonderheiten: & \dotfill \\
+    & \dotfill \\
+    & \dotfill \\
+    & \dotfill \\
+    & \dotfill \\
+    & \dotfill \\
+\end{tabular}
+\vspace{8mm}
+
+\textbf{Genehmigt durch das Innen- oder Wirtschaftsministerium}
+
+\vspace{3mm}
+\begin{tabular}{p{5cm}p{13cm}}
+    Datum: & \dotfill \\
+\end{tabular}
+
+\vspace{3mm}
+\begin{tabular}{p{5cm}p{13cm}}
+    Unterschrift: & \dotfill \\
+\end{tabular}
+\end{document}

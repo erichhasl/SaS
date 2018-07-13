@@ -1,0 +1,101 @@
+\documentclass[12pt]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[german]{babel}
+\usepackage{tikz}
+\usepackage{extsizes}
+\usepackage{geometry}
+\usepackage{booktabs}
+\usepackage{eurosym}
+\usepackage{framed}
+\usepackage{svg}
+
+\geometry{
+    margin=0.3cm,
+    landscape
+}
+
+
+\newcommand{\ball}{\includegraphics[height=.7\baselineskip]{ball.pdf}}
+\newcommand{\essen}{\includegraphics[height=.7\baselineskip]{essen.pdf}}
+\newcommand{\shopping}{\includegraphics[height=.7\baselineskip]{shopping.pdf}}
+\newcommand{\party}{\includegraphics[height=.7\baselineskip]{party.pdf}}
+\newcommand{\education}{\includegraphics[height=.7\baselineskip]{education.pdf}}
+
+\setlength{\parindent}{0cm}
+\pagenumbering{gobble}
+
+\begin{document}
+
+\begin{minipage}{.28\textwidth}
+    \begin{framed}
+        \begin{tabular}{p{1cm}p{5cm}}
+            G414 & Massagestudio \\
+            G413 & Goethopias Nachrichten \newline Lucky Charms \shopping \\
+            G411 & Die Zeitung \newline Anwaltskanzlei \\
+            G407 & Tanschule Motion \ball \\
+            G405 & Staatsarchiv \\
+            G404 & SOS Nothelfer \\
+            G325 & Crèpe Factory \essen \newline Café en Rose \essen \\
+            G323 & Smoothopia \essen \newline Hot Chocolate \essen \\
+            G322 & Casino Royal \party \newline Losbude \party \\
+            G319 & Galvano Freaks \shopping \\
+            G317 & Gummibärchen Fabrik \\
+            G316 & Spüldienst \\
+            G312 & Goethe Spezial \essen \newline Café Summerdream \essen \\
+            G309 & Rêve de Chocolat \essen \newline Freche Cocktails \essen \\
+            G307 & Food Station \essen \newline Cocktailbar \essen \\
+            G303 & Süße Träume \essen \newline Candy Bar \essen \\
+            G302 & Parlament\\
+            G301 & Gericht \\
+            G227 & Standesamt \newline SKG Werbeagentur \\
+            G226 & Werbeagentur Baguette \newline Goethopia's Secrets \\
+            G225 & FIUL \party \newline Seco - Kunst macht Spaß \shopping \\
+            G224 & Royal Disco \party \\
+            G221 & Sprachschule \education \\
+            G210 & Radio \\
+            G209 & Polizei \newline Müllabfuhr \newline Innenministerium \\
+        \end{tabular}
+    \end{framed}
+\end{minipage}
+\begin{minipage}{.4\textwidth}
+    \vspace{-10mm}
+    \begin{center}
+    \textbf{\LARGE Raumplan}\\
+    \end{center}
+    \vspace{5mm}
+    \includegraphics[height=.8\textheight]{gebaude_plan.pdf}
+\end{minipage}
+\begin{minipage}{.28\textwidth}
+    \begin{framed}
+        \begin{tabular}{p{1cm}p{5cm}}
+            G200 & Paper Planes \\
+            G123 & Goethopischer Post Express \newline Kleine Kruschtwelt \shopping \\
+            G122 & Cinethopia \\
+            G121 & Jeans Redesigned \shopping \newline Tatoo Studio \\
+            G120 & Amors Agentur \newline Fotopia \\
+            G117 & Nagelstudio \newline Verwöhnt Verföhnt \\
+            G112 & Goethopia Merch \shopping \newline Cokos Fotostudio \\
+            G109 & Cineflixx \\
+            G108 & Tortentraum \essen \\
+            G107 & Wirtschaftsministerium\\
+            G101 & Veranstaltungen \\
+            G100 & Touristeninformation\\
+            G022 & Love Is In The Air \newline Saloon\\
+            G021 & Ice, Ice Baby \essen \newline Lorelias Fotobox \\
+            G020 & Full House \essen \newline Creamy Lena \essen \\
+            G019 & Staatstheater \\
+            G017 & Start with Fruits \essen \newline Salat zum Fäustchen \essen \\
+            G014 & Tanzschule Goethopia \ball \\
+            G012 & Yogastudio \ball \\
+            C004 & Second Chance \shopping \newline Letteringschule \education \\
+            C003 & Casino \party \newline Carmas Karaocas \party \\
+            C002 & Staatsorchester \\
+            C001 & GGL Bikeshop \shopping \\
+            Außen & Wurfbude \party \newline Amy's Best Burger \essen \newline Heißer Hund \essen \newline Bill's Grills \essen
+            \newline H+K Tischtennisschule \ball \newline Malwerkstatt\\
+        \end{tabular}
+    \end{framed}
+\end{minipage}
+
+\end{document}
