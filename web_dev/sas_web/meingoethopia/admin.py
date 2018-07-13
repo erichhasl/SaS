@@ -1,5 +1,6 @@
 from django.contrib import admin
-from .models import Betrieb, Partei, PresidentCandidate, Question, Angestellter
+from .models import Betrieb, Partei, PresidentCandidate, Question, Angestellter,\
+    Aufsicht, Betriebsaufsicht
 from startpage.models import Banned
 from django.contrib.admin import helpers
 from django.shortcuts import render
@@ -84,11 +85,16 @@ def create_overview(modeladmin, request, queryset):
 create_overview.short_description = "Übersicht erstellen"
 
 
+class AufsichtInline(admin.TabularInline):
+    model = Betriebsaufsicht
+    extra = 0
+
+
 # Register your models here.
 class BetriebAdmin(admin.ModelAdmin):
     list_display = ('name', 'manager', 'aufsicht', 'raum',
                     'arbeiter_effektiv', 'punkt',
-                    'approved')
+                    'approved', 'beaufsichtigt')
     list_filter = ('confirmed', 'approved', 'raum')
     search_fields = ('name', 'manager', 'raum', 'aufsicht')
     formfield_overrides = {
@@ -96,6 +102,7 @@ class BetriebAdmin(admin.ModelAdmin):
     }
     actions = [ban_ip, create_overview]
     filter_horizontal = ('angestellte',)
+    inlines = [AufsichtInline]
 
 
 class ParteiAdmin(admin.ModelAdmin):
@@ -122,8 +129,14 @@ class AngestellterAdmin(admin.ModelAdmin):
     list_filter = (ZugeteiltFilter,)
     search_fields = ('name', 'klasse')
 
+
+class AufsichtAdmin(admin.ModelAdmin):
+    list_display = ('name', 'show_stunden')
+    search_fields = ('name',)
+
 admin.site.register(Betrieb, BetriebAdmin)
 admin.site.register(Partei, ParteiAdmin)
 admin.site.register(PresidentCandidate, PresidentAdmin)
 admin.site.register(Question, QuestionAdmin)
 admin.site.register(Angestellter, AngestellterAdmin)
+admin.site.register(Aufsicht, AufsichtAdmin)

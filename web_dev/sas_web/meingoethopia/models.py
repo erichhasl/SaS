@@ -26,14 +26,33 @@ class Angestellter(models.Model):
         verbose_name_plural = 'Angestellte'
 
 
+class Aufsicht(models.Model):
+    name = models.CharField('Name', max_length=100)
+    stunden = models.IntegerField('Deputatsstunden', default=25,
+                                  help_text='Verfügbare Deputatsstunde (Dreiviertel Stunden) von Dienstag bis Freitag')
+
+    def __str__(self):
+        return self.name
+
+    def stunden_geleistet(self):
+        return sum([n.teilstunden for n in self.betriebsaufsicht_set.all()])
+
+    def show_stunden(self):
+        return "{}/{}".format(self.stunden_geleistet(), self.stunden)
+    show_stunden.short_description = "Deputatsstunden"
+
+    class Meta:
+        verbose_name = 'Aufsicht'
+        verbose_name_plural = 'Aufsichten'
+
+
 # Create your models here.
 class Betrieb(models.Model):
     name = models.CharField('Name', max_length=100)
     manager = models.CharField('Betriebsleiter', max_length=200)
     email = models.EmailField('Kontakt Email', blank=True)
     arbeitnehmerzahl = models.IntegerField('Anzahl Arbeitnehmer',
-                                           default=0,
-                                           help_text='Gesamtzahl aller angestellten '
+                                           default=0, help_text='Gesamtzahl aller angestellten '
                                            'Arbeitnehmer/-innen inklusive Betriebsleiter/-innen')
     arbeitnehmerzahl.short_description = 'Stellen'
     raumforderung = models.FloatField('Raumanforderung', default=0,
@@ -71,12 +90,29 @@ class Betrieb(models.Model):
                               self.arbeitnehmerzahl)
     arbeiter_effektiv.short_description = 'Stellen'
 
+    def beaufsichtigt(self):
+        betriebe = Betrieb.objects.filter(raum=self.raum)
+        stunden = sum([sum([n.teilstunden for n in
+                            b.betriebsaufsicht_set.all()]) for b in betriebe])
+        return stunden >= 32 * self.punkt()
+    beaufsichtigt.boolean = True
+    beaufsichtigt.short_description = 'Beaufsichtigt'
+
     def __str__(self):
         return str(self.name)
 
     class Meta:
         verbose_name = 'Betrieb'
         verbose_name_plural = 'Betriebe'
+
+
+class Betriebsaufsicht(models.Model):
+    aufsicht = models.ForeignKey(Aufsicht)
+    betrieb = models.ForeignKey(Betrieb)
+    teilstunden = models.IntegerField('Geleistete Deputatsstunden', default=16)
+
+    def __str__(self):
+        return self.aufsicht.name
 
 
 class Partei(models.Model):
