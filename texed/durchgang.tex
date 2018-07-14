@@ -1,0 +1,79 @@
+\documentclass[12pt]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[german]{babel}
+\usepackage{tikz}
+\usepackage{extsizes}
+\usepackage{geometry}
+\usepackage{booktabs}
+\usepackage{eurosym}
+
+\geometry{
+    margin=1.2cm
+}
+
+\newcommand{\kreis}{
+    $\vcenter{\begin{tikzpicture}
+        \draw (0,0) circle (0.2cm);
+    \end{tikzpicture}}$
+}
+
+\setlength{\parindent}{0cm}
+\pagenumbering{gobble}
+
+\begin{document}
+
+\textbf{\LARGE{Kontrollgang Plan}}
+
+\vspace{0.5cm}
+
+Um \textbf{11:10} treffen sich alle Kontrolleure in G107. Da erhaltet ihr diesen Plan
+und einen Laptop.
+
+Ab \textbf{11:25} geht ihr durch die unten aufgeführten Räume mit einem Laptop und klärt mit den
+Betriebsleitern:
+
+\begin{itemize}
+    \item Ist der richtige Betrieb im richtigen Raum?
+    \item Sind alle Mitarbeiter die in der Datenbank stehen angekommen?
+    \item Haben die Betriebsleiter mit den Aufsichten geredet?
+    \item Halbe Aufsichten erklären (siehe unten)
+\end{itemize}
+
+\renewcommand{\arraystretch}{1.5}
+\vspace{3mm}
+\begin{tabular}{p{4cm}p{14cm}}
+    \textbf{Räume} & \\[2mm]
+    \begin{tabular}{|p{.2\textwidth}|p{.45\textwidth}|p{.1\textwidth}|p{.1\textwidth}|}
+        \hline
+        \textbf{Raum} & \textbf{Kommentar} & \textbf{Erledigt} & \textbf{Alles gut}\\ \hline
+        & & & \\ \hline
+        & & & \\ \hline
+        & & & \\ \hline
+        & & & \\ \hline
+        & & & \\ \hline
+        & & & \\ \hline
+        & & & \\ \hline
+        & & & \\ \hline
+        & & & \\ \hline
+        & & & \\ \hline
+        & & & \\ \hline
+        & & & \\ \hline
+        & & & \\ \hline
+        & & & \\ \hline
+        & & & \\ \hline
+    \end{tabular} & \\
+\end{tabular}
+
+\vspace{5mm}
+
+\textbf{Halbe Aufsichten}: In der Datenbank steht bei jedem Betrieb (in der Listenübersicht) bei „Punkt“
+entweder 1, 0,5 oder 0. Bei einem ganzen Punkt muss in dem Raum beide Schichten jemand Aufsicht
+führen. Bei einem halben Punkt nur eine Schicht. Wenn in einem Raum zwei Betriebe mit halbem Punkt
+sind, bedeutet das, dass beide Betriebe ihre Schicht mit Unterstufenschülern gleichzeitig haben
+müssen und die Aufsichten auch nur dann da sein müssen. Da müssen sich Aufsichten und beide
+Betriebsleiter absprechen.
+
+\vspace{0.4cm}
+
+\end{document}
