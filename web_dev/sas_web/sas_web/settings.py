@@ -54,6 +54,7 @@ INSTALLED_APPS = (
     'datenbank',
     'meingoethopia',
     'startpage',
+    'easy_select2',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',

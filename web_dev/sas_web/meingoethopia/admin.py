@@ -7,6 +7,7 @@ from django.shortcuts import render
 from django.template.defaulttags import register
 from django.db import models
 from django import forms
+from easy_select2 import apply_select2
 
 
 class ZugeteiltFilter(admin.SimpleListFilter):
@@ -88,6 +89,10 @@ create_overview.short_description = "Übersicht erstellen"
 class AufsichtInline(admin.TabularInline):
     model = Betriebsaufsicht
     extra = 0
+    formfield_overrides = {
+        models.ManyToManyField: {'widget': forms.CheckboxSelectMultiple},
+        models.ForeignKey: {'widget': apply_select2(forms.Select)}
+    }
 
 
 # Register your models here.
@@ -99,6 +104,7 @@ class BetriebAdmin(admin.ModelAdmin):
     search_fields = ('name', 'manager', 'raum', 'aufsicht')
     formfield_overrides = {
         models.ManyToManyField: {'widget': forms.CheckboxSelectMultiple},
+        models.ForeignKey: {'widget': apply_select2(forms.Select)}
     }
     actions = [ban_ip, create_overview]
     filter_horizontal = ('angestellte',)
@@ -133,6 +139,10 @@ class AngestellterAdmin(admin.ModelAdmin):
 class AufsichtAdmin(admin.ModelAdmin):
     list_display = ('name', 'show_stunden')
     search_fields = ('name',)
+    formfield_overrides = {
+        models.ManyToManyField: {'widget': forms.CheckboxSelectMultiple},
+        models.ForeignKey: {'widget': apply_select2(forms.Select)}
+    }
 
 admin.site.register(Betrieb, BetriebAdmin)
 admin.site.register(Partei, ParteiAdmin)

@@ -28,8 +28,8 @@ class Angestellter(models.Model):
 
 class Aufsicht(models.Model):
     name = models.CharField('Name', max_length=100)
-    stunden = models.IntegerField('Deputatsstunden', default=25,
-                                  help_text='Verfügbare Deputatsstunde (Dreiviertel Stunden) von Dienstag bis Freitag')
+    stunden = models.FloatField('Deputatsstunden', default=25,
+                                help_text='Verfügbare Deputatsstunde (Dreiviertel Stunden) von Dienstag bis Freitag')
 
     def __str__(self):
         return self.name
@@ -109,7 +109,7 @@ class Betrieb(models.Model):
 class Betriebsaufsicht(models.Model):
     aufsicht = models.ForeignKey(Aufsicht)
     betrieb = models.ForeignKey(Betrieb)
-    teilstunden = models.IntegerField('Geleistete Deputatsstunden', default=16)
+    teilstunden = models.FloatField('Geleistete Deputatsstunden', default=16)
 
     def __str__(self):
         return self.aufsicht.name
