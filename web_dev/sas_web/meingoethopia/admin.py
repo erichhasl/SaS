@@ -97,7 +97,7 @@ class AufsichtInline(admin.TabularInline):
 
 # Register your models here.
 class BetriebAdmin(admin.ModelAdmin):
-    list_display = ('name', 'manager', 'aufsicht', 'raum',
+    list_display = ('name', 'manager', 'show_aufsichten', 'raum',
                     'arbeiter_effektiv', 'punkt',
                     'approved', 'beaufsichtigt')
     list_filter = ('confirmed', 'approved', 'raum')

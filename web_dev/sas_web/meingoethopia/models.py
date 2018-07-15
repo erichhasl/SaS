@@ -28,6 +28,7 @@ class Angestellter(models.Model):
 
 class Aufsicht(models.Model):
     name = models.CharField('Name', max_length=100)
+    kuerzel = models.CharField('Kürzel', max_length=4, default="")
     stunden = models.FloatField('Deputatsstunden', default=25,
                                 help_text='Verfügbare Deputatsstunde (Dreiviertel Stunden) von Dienstag bis Freitag')
 
@@ -98,6 +99,13 @@ class Betrieb(models.Model):
     beaufsichtigt.boolean = True
     beaufsichtigt.short_description = 'Beaufsichtigt'
 
+    def show_aufsichten(self):
+        aufsichten = ["{} ({})".format(a.aufsicht.kuerzel,
+                                       truncate_if_zero(a.teilstunden)) for a in
+                      self.betriebsaufsicht_set.all()]
+        return ", ".join(aufsichten)
+    show_aufsichten.short_description = "Aufsicht"
+
     def __str__(self):
         return str(self.name)
 
@@ -162,3 +170,10 @@ class Question(models.Model):
     class Meta:
         verbose_name = 'Frage'
         verbose_name_plural = 'Fragen'
+
+
+def truncate_if_zero(x):
+    if int(x) == x:
+        return round(x)
+    else:
+        return x
