@@ -62,6 +62,8 @@ class Betrieb(models.Model):
     raum = models.IntegerField('Raum', default=102)
     aufsicht = models.CharField('Aufsicht', max_length=100, default='keine')
     kredit = models.IntegerField('Kreditwunsch', default=0)
+    kredit_ausgezahlt = models.BooleanField('Kredit ausgezahlt', default=False)
+    kredit_bezahlt = models.BooleanField('Kredit zurückgezahlt', default=False)
     business_idea = models.TextField('Idee')
     ip_address = models.CharField('IP Adresse', max_length=50, blank=True)
     confirmed = models.BooleanField('Bestätigt', default=False)
@@ -121,6 +123,20 @@ class Betriebsaufsicht(models.Model):
 
     def __str__(self):
         return self.aufsicht.name
+
+
+class Betriebsabrechnung(models.Model):
+    betrieb = models.ForeignKey(Betrieb)
+    datum = models.DateField('Datum')
+    umsatz = models.IntegerField('Umsatz')
+    lohnkosten = models.IntegerField('Lohnkosten')
+    ausgaben = models.IntegerField('Ausgaben')
+    gewinn = models.IntegerField('Gewinn')
+    steuer = models.IntegerField('Steuer')
+    erledigt = models.BooleanField('Erledigt')
+
+    def __str__(self):
+        return self.betrieb.name + " " + str(self.datum)
 
 
 class Partei(models.Model):

@@ -1,6 +1,6 @@
 from django.contrib import admin
 from .models import Betrieb, Partei, PresidentCandidate, Question, Angestellter,\
-    Aufsicht, Betriebsaufsicht
+    Aufsicht, Betriebsaufsicht, Betriebsabrechnung
 from startpage.models import Banned
 from django.contrib.admin import helpers
 from django.shortcuts import render
@@ -95,6 +95,16 @@ class AufsichtInline(admin.TabularInline):
     }
 
 
+class BetriebsabrechnungInline(admin.TabularInline):
+    model = Betriebsabrechnung
+    extra = 0
+    formfield_overrides = {
+        models.ManyToManyField: {'widget': forms.CheckboxSelectMultiple},
+        models.ForeignKey: {'widget': apply_select2(forms.Select)}
+    }
+    template = "meingoethopia/betriebsabrechnung.html"
+
+
 # Register your models here.
 class BetriebAdmin(admin.ModelAdmin):
     list_display = ('name', 'manager', 'show_aufsichten', 'raum',
@@ -108,7 +118,7 @@ class BetriebAdmin(admin.ModelAdmin):
     }
     actions = [ban_ip, create_overview]
     filter_horizontal = ('angestellte',)
-    inlines = [AufsichtInline]
+    inlines = [AufsichtInline, BetriebsabrechnungInline]
 
 
 class ParteiAdmin(admin.ModelAdmin):
