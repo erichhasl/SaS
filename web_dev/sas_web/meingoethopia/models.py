@@ -139,6 +139,16 @@ class Betriebsabrechnung(models.Model):
         return self.betrieb.name + " " + str(self.datum)
 
 
+class Betriebskredit(models.Model):
+    betrieb = models.ForeignKey(Betrieb)
+    betrag = models.IntegerField('Betrag')
+    erklaerung = models.TextField('Erläuterung', max_length=200)
+    erledigt = models.BooleanField('Zurückgezahlt')
+
+    def __str__(self):
+        return self.betrieb.name + " " + str(self.datum)
+
+
 class Partei(models.Model):
     name = models.CharField('Name', max_length=100)
     abbreviation = models.CharField('Abkürzung', max_length=5)

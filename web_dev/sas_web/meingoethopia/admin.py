@@ -1,6 +1,6 @@
 from django.contrib import admin
 from .models import Betrieb, Partei, PresidentCandidate, Question, Angestellter,\
-    Aufsicht, Betriebsaufsicht, Betriebsabrechnung
+    Aufsicht, Betriebsaufsicht, Betriebsabrechnung, Betriebskredit
 from startpage.models import Banned
 from django.contrib.admin import helpers
 from django.shortcuts import render
@@ -103,6 +103,15 @@ class BetriebsabrechnungInline(admin.TabularInline):
         models.ForeignKey: {'widget': apply_select2(forms.Select)}
     }
     template = "meingoethopia/betriebsabrechnung.html"
+
+
+class BetriebskreditInline(admin.TabularInline):
+    model = Betriebskredit
+    extra = 0
+    formfield_overrides = {
+        models.ManyToManyField: {'widget': forms.CheckboxSelectMultiple},
+        models.ForeignKey: {'widget': apply_select2(forms.Select)}
+    }
 
 
 # Register your models here.
