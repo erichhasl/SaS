@@ -127,7 +127,7 @@ class BetriebAdmin(admin.ModelAdmin):
     }
     actions = [ban_ip, create_overview]
     filter_horizontal = ('angestellte',)
-    inlines = [AufsichtInline, BetriebsabrechnungInline]
+    inlines = [BetriebsabrechnungInline, BetriebskreditInline, AufsichtInline]
 
 
 class ParteiAdmin(admin.ModelAdmin):

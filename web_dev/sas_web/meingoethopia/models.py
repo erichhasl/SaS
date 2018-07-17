@@ -146,7 +146,7 @@ class Betriebskredit(models.Model):
     erledigt = models.BooleanField('Zurückgezahlt')
 
     def __str__(self):
-        return self.betrieb.name + " " + str(self.datum)
+        return self.betrieb.name + " " + str(self.betrag)
 
 
 class Partei(models.Model):
