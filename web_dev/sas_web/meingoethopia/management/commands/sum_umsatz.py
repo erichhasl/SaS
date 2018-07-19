@@ -11,7 +11,10 @@ class Command(BaseCommand):
         klassen = {}
         for b in betriebe:
             u = sum([a.umsatz for a in b.betriebsabrechnung_set.all()])
-            u2 = u / b.angestellte.count()
+            try:
+                u2 = u / b.angestellte.count()
+            except ZeroDivisionError:
+                u2 = 0
             for a in b.angestellte.all():
                 if a.klasse not in klassen:
                     klassen[a.klasse] = u2
