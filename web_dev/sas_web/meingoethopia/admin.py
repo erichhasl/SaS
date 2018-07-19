@@ -110,7 +110,7 @@ def sum_umsatz(modeladmin, request, queryset):
             data[k] = {}
             uk = round((v / umsatz_gesamt) * 100, 2)
             data[k]['anteil'] = uk
-            data[k]['beispiel'] = round(uk * 70, 2)
+            data[k]['beispiel'] = round(uk * 15, 2)
         context = {'action_checkbox_name': helpers.ACTION_CHECKBOX_NAME,
                    'umsatz_gesamt': umsatz_gesamt,
                    'klassen': data,
