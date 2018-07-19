@@ -15,12 +15,13 @@ Betriebs, entsteht folgender Schlüssel.</p>
     <tr>
         <th>Klasse</th>
         <th>Prozentualer Gewinnanteil</th>
+        <th>Beispielhafter Gewinn bei 7000€</th>
     </tr>
-    {% for klasse, anteil in klassen.items %}
+    {% for klasse, data in klassen.items %}
     <tr>
         <td>{{ klasse }}</td>
-        <td>{{ anteil }} %</td>
-        
+        <td>{{ data|get_item:"anteil" }} %</td>
+        <td>{{ data|get_item:"beispiel" }} €</td>
     </tr>
     {% endfor %}
 </table>

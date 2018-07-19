@@ -105,10 +105,15 @@ def sum_umsatz(modeladmin, request, queryset):
                     klassen[a.klasse] = u2
                 else:
                     klassen[a.klasse] += u2
-        anteile = {k: round((v / umsatz_gesamt) * 100, 2) for k, v in klassen.items()}
+        data = {}
+        for k, v in klassen.items():
+            data[k] = {}
+            uk = round((v / umsatz_gesamt) * 100, 2)
+            data[k]['anteil'] = uk
+            data[k]['beispiel'] = uk * 70
         context = {'action_checkbox_name': helpers.ACTION_CHECKBOX_NAME,
                    'umsatz_gesamt': umsatz_gesamt,
-                   'klassen': anteile,
+                   'klassen': data,
                    'title': "Umsatzübersicht"}
         return render(request, 'meingoethopia/umsatz_view.html', context)
 
