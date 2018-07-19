@@ -1,0 +1,33 @@
+{% extends "admin/base_site.html" %}
+
+{% block content %}
+
+<h2>Gesamtumsatz</h2>
+
+<p>Insgesamt wurden {{ umsatz_gesamt }} G-Mark erwirtschaftet.</p>
+
+<h2>Klassenverteilung</h2>
+
+<p>Bei einer Verteilung des Projektgewinns auf die Klassenkassen je nach Arbeitnehmer des
+Betriebs, entsteht folgender Schlüssel.</p>
+
+<table>
+    <tr>
+        <th>Klasse</th>
+        <th>Prozentualer Gewinnanteil</th>
+    </tr>
+    {% for klasse, anteil in klassen.items %}
+    <tr>
+        <td>{{ klasse }}</td>
+        <td>{{ anteil }} %</td>
+        
+    </tr>
+    {% endfor %}
+</table>
+
+<form action="" method="post">
+	{% csrf_token %}
+	<input type="submit" value="Zurück">
+</form>
+
+{% endblock %}

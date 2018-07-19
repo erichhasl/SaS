@@ -86,6 +86,35 @@ def create_overview(modeladmin, request, queryset):
 create_overview.short_description = "Übersicht erstellen"
 
 
+def sum_umsatz(modeladmin, request, queryset):
+    if request.POST.get('back'):
+        pass
+    else:
+        betriebe = queryset
+        klassen = {}
+        umsatz_gesamt = 0
+        for b in betriebe:
+            u = sum([a.umsatz for a in b.betriebsabrechnung_set.all()])
+            umsatz_gesamt += u
+            try:
+                u2 = u / b.angestellte.count()
+            except ZeroDivisionError:
+                u2 = 0
+            for a in b.angestellte.all():
+                if a.klasse not in klassen:
+                    klassen[a.klasse] = u2
+                else:
+                    klassen[a.klasse] += u2
+        anteile = {k: round((v / umsatz_gesamt) * 100, 2) for k, v in klassen.items()}
+        context = {'action_checkbox_name': helpers.ACTION_CHECKBOX_NAME,
+                   'umsatz_gesamt': umsatz_gesamt,
+                   'klassen': anteile,
+                   'title': "Umsatzübersicht"}
+        return render(request, 'meingoethopia/umsatz_view.html', context)
+
+sum_umsatz.short_description = "Umsatzverteilung berechnen"
+
+
 class AufsichtInline(admin.TabularInline):
     model = Betriebsaufsicht
     extra = 0
@@ -125,7 +154,7 @@ class BetriebAdmin(admin.ModelAdmin):
         models.ManyToManyField: {'widget': forms.CheckboxSelectMultiple},
         models.ForeignKey: {'widget': apply_select2(forms.Select)}
     }
-    actions = [ban_ip, create_overview]
+    actions = [ban_ip, create_overview, sum_umsatz]
     filter_horizontal = ('angestellte',)
     inlines = [BetriebsabrechnungInline, BetriebskreditInline, AufsichtInline]
 
